@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_01",
+    "number": 1,
+    "title": "Muž v pokoji 314",
+    "status": "available",
+    "available": true,
+    "version": 1,
+    "requiredCase": "case_00",
+    "downloadSize": 154000000,
+    "releaseDate": "2026-09-09",
+    "publicSummary": "Bývalý kriminalista Tomáš Růžička byl nalezen mrtvý ve svém pokoji.\n\nPřípad byl označen za sebevraždu.\n\nNěkteré důkazy však naznačují něco jiného.",
+    "publicSetting": "Hotel Aurora",
+    "publicDateLabel": "17. září 2026",
+    "coverAsset": null
+  }
+}

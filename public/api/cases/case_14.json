@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_14",
+    "number": 14,
+    "title": "Protokol, který neexistuje",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_13",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

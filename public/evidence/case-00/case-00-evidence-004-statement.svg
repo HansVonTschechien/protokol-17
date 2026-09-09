@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#12110f"/>
+  <rect x="60" y="50" width="600" height="860" fill="#e8dfcd"/>
+  <rect x="60" y="50" width="16" height="860" fill="#8f2a28"/>
+  <text x="110" y="110" fill="#8f2a28" font-family="ui-monospace, monospace" font-size="14">SPIS 00  /  ZAZNAM VYPOVEDI  /  DUKAZ 004</text>
+  <text x="110" y="160" fill="#2a261f" font-family="Georgia, serif" font-size="32">Vypoved svedka</text>
+  <text x="110" y="210" fill="#5c584f" font-family="ui-monospace, monospace" font-size="14">13. 4. 2026  09:15</text>
+  <text x="110" y="270" fill="#2a261f" font-family="Georgia, serif" font-size="20">Jmeno:</text>
+  <rect x="190" y="252" width="220" height="22" fill="#2a261f"/>
+  <text x="110" y="310" fill="#2a261f" font-family="Georgia, serif" font-size="20">Role: obsluha kavarny</text>
+  <text x="110" y="380" fill="#2a261f" font-family="Georgia, serif" font-size="18">Prisli odpoledne. Sedeli u okna.</text>
+  <text x="110" y="412" fill="#2a261f" font-family="Georgia, serif" font-size="18">Jeden odesel driv. Ten druhy jeste</text>
+  <text x="110" y="444" fill="#2a261f" font-family="Georgia, serif" font-size="18">chvili zustal. Na nic si nestezovali.</text>
+  <text x="110" y="500" fill="#2a261f" font-family="Georgia, serif" font-size="18">Jestli se znali? To nevim.</text>
+  <text x="110" y="532" fill="#2a261f" font-family="Georgia, serif" font-size="18">Nemluvili nahlas.</text>
+  <rect x="110" y="600" width="220" height="18" fill="#2a261f"/>
+  <rect x="110" y="632" width="310" height="18" fill="#2a261f"/>
+  <text x="110" y="720" fill="#6a655c" font-family="ui-monospace, monospace" font-size="13">VEREJNA CAST — BEZ VYHODNOCENI</text>
+  <rect x="430" y="780" width="150" height="48" fill="none" stroke="#8f2a28" stroke-width="2"/>
+  <text x="458" y="810" fill="#8f2a28" font-family="ui-monospace, monospace" font-size="16">CVICNE</text>
+</svg>

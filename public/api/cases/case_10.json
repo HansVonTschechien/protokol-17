@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_10",
+    "number": 10,
+    "title": "Poslední hovor",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_09",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

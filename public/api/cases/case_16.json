@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_16",
+    "number": 16,
+    "title": "Zpátky do roku 2009",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_15",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

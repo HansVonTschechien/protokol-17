@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_09",
+    "number": 9,
+    "title": "Hřbitov na kopci",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_08",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#0d0d0c"/>
+  <rect x="50" y="50" width="620" height="860" fill="#161513" stroke="#2f2c26"/>
+  <text x="80" y="110" fill="#8a867c" font-family="ui-monospace, monospace" font-size="14">SPIS 00  /  DUKAZ 005  /  VYPIS SPOJENI</text>
+  <text x="80" y="160" fill="#e7e1d4" font-family="Georgia, serif" font-size="32">Telefonni zaznam</text>
+  <text x="80" y="200" fill="#7a766c" font-family="ui-monospace, monospace" font-size="14">12. 4. 2026</text>
+  <rect x="80" y="240" width="560" height="1" fill="#3a372f"/>
+  <text x="80" y="280" fill="#9a9790" font-family="ui-monospace, monospace" font-size="13">CAS        SMER      CISLO              TRVANI</text>
+  <text x="80" y="330" fill="#e7e1d4" font-family="ui-monospace, monospace" font-size="16">16:58      PRICHOZI  +420 *** *** 218   00:22</text>
+  <text x="80" y="370" fill="#cfc4ae" font-family="ui-monospace, monospace" font-size="16">17:02      SMS       +420 *** *** 218   --</text>
+  <text x="80" y="410" fill="#8a867c" font-family="ui-monospace, monospace" font-size="16">17:44      ODCHOZI   +420 *** *** ***   01:03</text>
+  <rect x="80" y="470" width="560" height="1" fill="#3a372f"/>
+  <text x="80" y="530" fill="#7a766c" font-family="ui-monospace, monospace" font-size="13">POZNAMKA VEREJNEHO ARCHIVU</text>
+  <text x="80" y="570" fill="#cfc4ae" font-family="Georgia, serif" font-size="20">Cisla jsou castecne redigovana.</text>
+  <text x="80" y="604" fill="#cfc4ae" font-family="Georgia, serif" font-size="20">Vyhodnoceni spojeni neni soucasti</text>
+  <text x="80" y="638" fill="#cfc4ae" font-family="Georgia, serif" font-size="20">verejne spisovny.</text>
+  <rect x="80" y="760" width="170" height="50" fill="none" stroke="#8f2a28" stroke-width="2"/>
+  <text x="98" y="792" fill="#c45c52" font-family="ui-monospace, monospace" font-size="16">OMEZENY</text>
+</svg>

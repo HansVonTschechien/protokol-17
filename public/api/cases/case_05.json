@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_05",
+    "number": 5,
+    "title": "Tichý svědek",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_04",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

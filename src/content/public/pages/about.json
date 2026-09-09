@@ -1,0 +1,16 @@
+{
+  "kicker": "O hře",
+  "title": "Digitální vyšetřovací archiv",
+  "paragraphs": [
+    "PROTOKOL 17 je česká detektivní puzzle hra pro macOS. Kombinuje kriminální příběh, práci s důkazy a logiku deskových EXIT her.",
+    "Hra je navržená pro MacBook, trackpad a klávesnici. Žádné ovladače. Žádný hlučný akční režim. Jen spis, stůl a čas.",
+    "Případy se do aplikace nestahují natvrdo. Hra načítá obsah podle manifestu. Web a hra sdílejí stejný datový model — a stejnou hranici mezi veřejným archivem a herním obsahem.",
+    "Tento web je veřejná část archivu. Neobsahuje řešení, kompletní časovou osu ani dokumenty, které mají zůstat ve hře."
+  ],
+  "facts": [
+    { "label": "Platforma", "value": "macOS" },
+    { "label": "Žánr", "value": "Detektivní logická hra" },
+    { "label": "Jazyk", "value": "Čeština" },
+    { "label": "Případy", "value": "17 spisů" }
+  ]
+}

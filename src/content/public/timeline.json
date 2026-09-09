@@ -1,0 +1,29 @@
+[
+  {
+    "id": "tl_2009_09_17",
+    "caseId": null,
+    "visibility": "public",
+    "datedAt": "2009-09-17",
+    "datedLabel": "17. září 2009",
+    "title": "Uzavřený případ",
+    "summary": "Roman Havel byl nalezen mrtvý. Případ byl uzavřen."
+  },
+  {
+    "id": "tl_2026_09_17",
+    "caseId": "case_01",
+    "visibility": "public",
+    "datedAt": "2026-09-17",
+    "datedLabel": "17. září 2026",
+    "title": "Hotel Aurora, pokoj 314",
+    "summary": "Bývalý kriminalista Tomáš Růžička byl nalezen mrtvý ve svém pokoji. Případ byl označen za sebevraždu."
+  },
+  {
+    "id": "tl_2026_protocol",
+    "caseId": "case_01",
+    "visibility": "public",
+    "datedAt": "2026-09-17",
+    "datedLabel": "2026",
+    "title": "Protokol 17",
+    "summary": "Na místě zůstala jediná věc. Nikdo nevěděl, co znamená. Až do chvíle, kdy se začaly objevovat důkazy, které neměly existovat."
+  }
+]

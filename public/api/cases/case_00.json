@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_00",
+    "number": 0,
+    "title": "Ztracená zpráva",
+    "status": "tutorial",
+    "available": true,
+    "version": 1,
+    "requiredCase": null,
+    "downloadSize": 18000000,
+    "releaseDate": "2026-09-09",
+    "publicSummary": "Výcvikový případ.\n\nNauč se pracovat s důkazy, časovou osou a vazbami.",
+    "publicSetting": "Cvičný materiál",
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

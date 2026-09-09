@@ -1,0 +1,18 @@
+{
+  "case": {
+    "id": "case_15",
+    "number": 15,
+    "title": "Svědek č. 4",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_14",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  },
+  "evidence": []
+}

@@ -1,0 +1,153 @@
+{
+  "gameVersion": "1.0.0",
+  "contentVersion": "1.0.0",
+  "latest": true,
+  "releasedAt": "2026-09-09",
+  "minimumMacOS": "13.0",
+  "cases": [
+    {
+      "id": "case_00",
+      "title": "Ztracená zpráva",
+      "version": 1,
+      "requiredCase": null,
+      "available": true,
+      "downloadSize": 18000000
+    },
+    {
+      "id": "case_01",
+      "title": "Muž v pokoji 314",
+      "version": 1,
+      "requiredCase": "case_00",
+      "available": true,
+      "downloadSize": 154000000
+    },
+    {
+      "id": "case_02",
+      "title": "Místo, které neexistuje",
+      "version": 1,
+      "requiredCase": "case_01",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_03",
+      "title": "Dívka z fotografie",
+      "version": 1,
+      "requiredCase": "case_02",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_04",
+      "title": "Třetí klíč",
+      "version": 1,
+      "requiredCase": "case_03",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_05",
+      "title": "Tichý svědek",
+      "version": 1,
+      "requiredCase": "case_04",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_06",
+      "title": "Stopa v archivu",
+      "version": 1,
+      "requiredCase": "case_05",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_07",
+      "title": "Červená složka",
+      "version": 1,
+      "requiredCase": "case_06",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_08",
+      "title": "Návštěva",
+      "version": 1,
+      "requiredCase": "case_07",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_09",
+      "title": "Hřbitov na kopci",
+      "version": 1,
+      "requiredCase": "case_08",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_10",
+      "title": "Poslední hovor",
+      "version": 1,
+      "requiredCase": "case_09",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_11",
+      "title": "Dům u lesa",
+      "version": 1,
+      "requiredCase": "case_10",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_12",
+      "title": "Jméno na seznamu",
+      "version": 1,
+      "requiredCase": "case_11",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_13",
+      "title": "Noc v Auroře",
+      "version": 1,
+      "requiredCase": "case_12",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_14",
+      "title": "Protokol, který neexistuje",
+      "version": 1,
+      "requiredCase": "case_13",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_15",
+      "title": "Svědek č. 4",
+      "version": 1,
+      "requiredCase": "case_14",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_16",
+      "title": "Zpátky do roku 2009",
+      "version": 1,
+      "requiredCase": "case_15",
+      "available": false,
+      "downloadSize": null
+    },
+    {
+      "id": "case_17",
+      "title": "Pravda",
+      "version": 1,
+      "requiredCase": "case_16",
+      "available": false,
+      "downloadSize": null
+    }
+  ]
+}

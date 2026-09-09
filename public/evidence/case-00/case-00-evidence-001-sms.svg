@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#0c0c0b"/>
+  <rect x="90" y="70" width="540" height="820" rx="42" fill="#161513" stroke="#3a372f"/>
+  <rect x="250" y="92" width="220" height="18" rx="9" fill="#2a271f"/>
+  <text x="130" y="150" fill="#8a867c" font-family="ui-monospace, monospace" font-size="18">12. 4. 2026  17:02</text>
+  <text x="130" y="210" fill="#cfc4ae" font-family="ui-monospace, monospace" font-size="22">NEZNAME CISLO</text>
+  <text x="130" y="240" fill="#7a766c" font-family="ui-monospace, monospace" font-size="16">+420 *** *** 218</text>
+  <rect x="130" y="290" width="430" height="150" rx="18" fill="#24211b"/>
+  <text x="156" y="350" fill="#e7e1d4" font-family="Georgia, serif" font-size="28">Bud tam v 17:30.</text>
+  <text x="156" y="392" fill="#e7e1d4" font-family="Georgia, serif" font-size="28">Stejne misto.</text>
+  <text x="130" y="500" fill="#6e6b64" font-family="ui-monospace, monospace" font-size="14">SPIS 00  /  DUKAZ 001  /  CVICNY MATERIAL</text>
+  <rect x="130" y="760" width="180" height="54" fill="none" stroke="#8f2a28" stroke-width="2"/>
+  <text x="148" y="794" fill="#c45c52" font-family="ui-monospace, monospace" font-size="16">NEOVERENO</text>
+</svg>

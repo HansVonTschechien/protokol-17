@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PublicCase",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "number", "title", "status", "available", "version"],
+  "properties": {
+    "id": { "type": "string" },
+    "number": { "type": "integer" },
+    "title": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["tutorial", "available", "coming_soon", "locked"]
+    },
+    "available": { "type": "boolean" },
+    "version": { "type": "integer" },
+    "requiredCase": { "type": ["string", "null"] },
+    "downloadSize": { "type": ["integer", "null"] },
+    "releaseDate": { "type": ["string", "null"] },
+    "publicSummary": { "type": "string" },
+    "publicSetting": { "type": ["string", "null"] },
+    "publicDateLabel": { "type": ["string", "null"] },
+    "coverAsset": { "type": ["string", "null"] }
+  }
+}

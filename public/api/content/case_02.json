@@ -1,0 +1,18 @@
+{
+  "case": {
+    "id": "case_02",
+    "number": 2,
+    "title": "Místo, které neexistuje",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_01",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  },
+  "evidence": []
+}

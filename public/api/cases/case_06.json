@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_06",
+    "number": 6,
+    "title": "Stopa v archivu",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_05",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

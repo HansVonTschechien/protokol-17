@@ -1,0 +1,4 @@
+# Game-only content lives outside the public website bundle.
+# Do not import this directory from client components or public API routes.
+# Future case packs: case.json, evidence.json, puzzles.json, timeline.json,
+# characters.json, dialogue.json, /images, /audio, /video.

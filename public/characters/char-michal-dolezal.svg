@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800">
+  <rect width="640" height="800" fill="#12110f"/>
+  <rect x="24" y="24" width="592" height="752" fill="none" stroke="#3a372f"/>
+  <rect x="80" y="90" width="480" height="430" fill="#1b1915"/>
+  <circle cx="320" cy="250" r="78" fill="#2a261f"/>
+  <path d="M170 520 C170 390 470 390 470 520 Z" fill="#2a261f"/>
+  <text x="320" y="300" text-anchor="middle" fill="#7c7a74" font-family="ui-monospace, monospace" font-size="28">MD</text>
+  <text x="80" y="580" fill="#7c7a74" font-family="ui-monospace, monospace" font-size="14">FOTOGRAFIE</text>
+  <text x="80" y="606" fill="#9a9790" font-family="ui-monospace, monospace" font-size="13">NENI SOUCASTI VEREJNEHO ARCHIVU</text>
+  <text x="80" y="680" fill="#e7e1d4" font-family="Georgia, serif" font-size="28">Michal Doležal</text>
+  <text x="80" y="720" fill="#8a867c" font-family="ui-monospace, monospace" font-size="14">MICHAL_DOL</text>
+</svg>

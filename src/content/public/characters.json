@@ -1,0 +1,112 @@
+[
+  {
+    "id": "char_klara_vachova",
+    "name": "Klára Váchová",
+    "ageLabel": "31",
+    "occupation": "Novinářka",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-klara-vachova.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_petr_vach",
+    "name": "Petr Vách",
+    "ageLabel": "58",
+    "occupation": "Podnikatel",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-petr-vach.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_roman_havel",
+    "name": "Roman Havel",
+    "ageLabel": "41 (2009)",
+    "occupation": "Obchodník",
+    "statusLabel": "Záznam 2009",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-roman-havel.svg",
+    "publicNote": "Jméno je součástí veřejně známé premisy případu."
+  },
+  {
+    "id": "char_michal_dolezal",
+    "name": "Michal Doležal",
+    "ageLabel": "46",
+    "occupation": "Advokát",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-michal-dolezal.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_viktor_kral",
+    "name": "Viktor Král",
+    "ageLabel": "52",
+    "occupation": "Provozovatel hotelu",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-viktor-kral.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_tomas_ruzicka",
+    "name": "Tomáš Růžička",
+    "ageLabel": "61",
+    "occupation": "Bývalý kriminalista",
+    "statusLabel": "Záznam 2026",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-tomas-ruzicka.svg",
+    "publicNote": "Jméno je součástí veřejně známé premisy případu."
+  },
+  {
+    "id": "char_jan_simek",
+    "name": "Jan Šimek",
+    "ageLabel": "44",
+    "occupation": "Kriminalista",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-jan-simek.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_alena_vachova",
+    "name": "Alena Váchová",
+    "ageLabel": "55",
+    "occupation": "Lékařka",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-alena-vachova.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_david_mares",
+    "name": "David Mareš",
+    "ageLabel": "38",
+    "occupation": "Recepční",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-david-mares.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_daniel_benes",
+    "name": "Daniel Beneš",
+    "ageLabel": "49",
+    "occupation": "Technik",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-daniel-benes.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  },
+  {
+    "id": "char_lucie_cerna",
+    "name": "Lucie Černá",
+    "ageLabel": "29",
+    "occupation": "Fotografka",
+    "statusLabel": "Osoba v spisu",
+    "visibility": "public",
+    "portraitAsset": "/characters/char-lucie-cerna.svg",
+    "publicNote": "Jméno evidováno ve veřejné části archivu."
+  }
+]

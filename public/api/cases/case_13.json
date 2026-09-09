@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_13",
+    "number": 13,
+    "title": "Noc v Auroře",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_12",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_17",
+    "number": 17,
+    "title": "Pravda",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_16",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

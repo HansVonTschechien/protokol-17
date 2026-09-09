@@ -1,0 +1,74 @@
+{
+  "case": {
+    "id": "case_00",
+    "number": 0,
+    "title": "Ztracená zpráva",
+    "status": "tutorial",
+    "available": true,
+    "version": 1,
+    "requiredCase": null,
+    "downloadSize": 18000000,
+    "releaseDate": "2026-09-09",
+    "publicSummary": "Výcvikový případ.\n\nNauč se pracovat s důkazy, časovou osou a vazbami.",
+    "publicSetting": "Cvičný materiál",
+    "publicDateLabel": null,
+    "coverAsset": null
+  },
+  "evidence": [
+    {
+      "id": "case_00_evidence_001",
+      "caseId": "case_00",
+      "code": "001",
+      "title": "Anonymní SMS",
+      "type": "sms",
+      "datedAt": "2026-04-12T17:02:00+02:00",
+      "datedLabel": "12. 4. 2026 · 17:02",
+      "assetPath": "/evidence/case-00/case-00-evidence-001-sms.svg",
+      "publicCaption": "Zpráva z neregistrovaného čísla. Odesílatel není ve veřejném archivu identifikován."
+    },
+    {
+      "id": "case_00_evidence_002",
+      "caseId": "case_00",
+      "code": "002",
+      "title": "Fotografie kavárny",
+      "type": "photo",
+      "datedAt": "2026-04-12T17:28:00+02:00",
+      "datedLabel": "12. 4. 2026 · 17:28",
+      "assetPath": "/evidence/case-00/case-00-evidence-002-cafe-photo.svg",
+      "publicCaption": "Exteriér kavárny. Časové razítko odpovídá odpoledni cvičného dne."
+    },
+    {
+      "id": "case_00_evidence_003",
+      "caseId": "case_00",
+      "code": "003",
+      "title": "Účtenka",
+      "type": "receipt",
+      "datedAt": "2026-04-12T17:41:00+02:00",
+      "datedLabel": "12. 4. 2026 · 17:41",
+      "assetPath": "/evidence/case-00/case-00-evidence-003-receipt.svg",
+      "publicCaption": "Pokladní doklad. Položky a čas jsou součástí cvičného materiálu."
+    },
+    {
+      "id": "case_00_evidence_004",
+      "caseId": "case_00",
+      "code": "004",
+      "title": "Výpověď svědka",
+      "type": "statement",
+      "datedAt": "2026-04-13T09:15:00+02:00",
+      "datedLabel": "13. 4. 2026 · 09:15",
+      "assetPath": "/evidence/case-00/case-00-evidence-004-statement.svg",
+      "publicCaption": "Zkrácený záznam výpovědi. Veřejná část neobsahuje vyhodnocení věrohodnosti."
+    },
+    {
+      "id": "case_00_evidence_005",
+      "caseId": "case_00",
+      "code": "005",
+      "title": "Telefonní záznam",
+      "type": "phone_log",
+      "datedAt": "2026-04-12T16:58:00+02:00",
+      "datedLabel": "12. 4. 2026 · 16:58",
+      "assetPath": "/evidence/case-00/case-00-evidence-005-phone-log.svg",
+      "publicCaption": "Výpis spojení. Čísla v cvičném materiálu jsou částečně redigována."
+    }
+  ]
+}

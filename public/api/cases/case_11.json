@@ -1,0 +1,17 @@
+{
+  "case": {
+    "id": "case_11",
+    "number": 11,
+    "title": "Dům u lesa",
+    "status": "coming_soon",
+    "available": false,
+    "version": 1,
+    "requiredCase": "case_10",
+    "downloadSize": null,
+    "releaseDate": null,
+    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSetting": null,
+    "publicDateLabel": null,
+    "coverAsset": null
+  }
+}

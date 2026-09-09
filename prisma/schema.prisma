@@ -1,0 +1,196 @@
+// Future database model for PROTOKOL 17.
+// The current website reads public JSON via FileContentRepository.
+// This schema is the contract for a later admin/CMS and player accounts.
+// Do not put game-secret fields into public API serializers.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Visibility {
+  PUBLIC
+  GAME
+}
+
+enum CaseStatus {
+  TUTORIAL
+  AVAILABLE
+  COMING_SOON
+  LOCKED
+}
+
+enum EvidenceType {
+  SMS
+  PHOTO
+  RECEIPT
+  STATEMENT
+  PHONE_LOG
+  DOCUMENT
+  AUDIO
+  VIDEO
+  OTHER
+}
+
+model Case {
+  id             String     @id
+  number         Int        @unique
+  title          String
+  status         CaseStatus
+  visibility     Visibility @default(PUBLIC)
+  available      Boolean    @default(false)
+  version        Int        @default(1)
+  requiredCaseId String?
+  downloadSize   Int?
+  releaseDate    DateTime?
+  publicSummary  String
+  publicSetting  String?
+  publicDateLabel String?
+  coverAsset     String?
+
+  requiredCase   Case?      @relation("CasePrereq", fields: [requiredCaseId], references: [id])
+  nextCases      Case[]     @relation("CasePrereq")
+  versions       CaseVersion[]
+  evidence       Evidence[]
+  characters     CaseCharacter[]
+  puzzles        Puzzle[]
+  timeline       TimelineEvent[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("cases")
+}
+
+model CaseVersion {
+  id            String   @id @default(cuid())
+  caseId        String
+  version       Int
+  downloadSize  Int?
+  contentPath   String
+  checksum      String?
+  published     Boolean  @default(false)
+  case          Case     @relation(fields: [caseId], references: [id])
+  createdAt     DateTime @default(now())
+
+  @@unique([caseId, version])
+  @@map("case_versions")
+}
+
+model ContentVersion {
+  id            String   @id @default(cuid())
+  version       String   @unique
+  gameVersion   String
+  latest        Boolean  @default(false)
+  releasedAt    DateTime
+  notes         String?
+  createdAt     DateTime @default(now())
+
+  @@map("content_versions")
+}
+
+model Evidence {
+  id             String       @id
+  caseId         String
+  code           String
+  title          String
+  type           EvidenceType
+  visibility     Visibility
+  datedAt        DateTime?
+  datedLabel     String?
+  assetPath      String
+  publicCaption  String?
+  case           Case         @relation(fields: [caseId], references: [id])
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@unique([caseId, code])
+  @@map("evidence")
+}
+
+model Character {
+  id             String   @id
+  name           String
+  ageLabel       String
+  occupation     String
+  statusLabel    String
+  visibility     Visibility
+  portraitAsset  String?
+  publicNote     String?
+  cases          CaseCharacter[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@map("characters")
+}
+
+model CaseCharacter {
+  caseId      String
+  characterId String
+  case        Case      @relation(fields: [caseId], references: [id])
+  character   Character @relation(fields: [characterId], references: [id])
+
+  @@id([caseId, characterId])
+  @@map("case_characters")
+}
+
+model Puzzle {
+  id         String     @id
+  caseId     String
+  visibility Visibility @default(GAME)
+  title      String
+  kind       String
+  case       Case       @relation(fields: [caseId], references: [id])
+
+  @@map("puzzles")
+}
+
+model TimelineEvent {
+  id         String     @id
+  caseId     String?
+  visibility Visibility
+  datedAt    DateTime
+  datedLabel String
+  title      String
+  summary    String
+  case       Case?      @relation(fields: [caseId], references: [id])
+
+  @@map("timeline_events")
+}
+
+// Future tables — not used by the current public site.
+
+model User {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  progress  PlayerProgress[]
+  downloads Download[]
+
+  @@map("users")
+}
+
+model PlayerProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  caseId    String
+  payload   Json
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@unique([userId, caseId])
+  @@map("player_progress")
+}
+
+model Download {
+  id        String   @id @default(cuid())
+  userId    String?
+  asset     String
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id])
+
+  @@map("downloads")
+}
