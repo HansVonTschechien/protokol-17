@@ -23,17 +23,19 @@ export function CaseCard({
 
   const inner = (
     <article
-      className={`dossier flex h-full flex-col p-6 ${featured ? "min-h-64" : ""}`}
+      className={`dossier flex h-full flex-col p-5 sm:p-6 ${featured ? "min-h-56 sm:min-h-64" : ""}`}
     >
       <div className="flex items-start justify-between gap-4">
         <p className="font-mono text-[0.68rem] tracking-[0.22em] text-metal">
           SPIS {number}
         </p>
-        <Badge tone={item.status === "available" || item.status === "tutorial" ? "accent" : "default"}>
-          {locked ? "🔒 Brzy" : item.status === "tutorial" ? "✓ Tutoriál" : STATUS_LABEL[item.status]}
-        </Badge>
+        <span className="shrink-0">
+          <Badge tone={item.status === "available" || item.status === "tutorial" ? "accent" : "default"}>
+            {locked ? "🔒 Brzy" : item.status === "tutorial" ? "✓ Tutoriál" : STATUS_LABEL[item.status]}
+          </Badge>
+        </span>
       </div>
-      <h2 className="display-title mt-6 text-2xl text-off-white sm:text-3xl">
+      <h2 className="display-title mt-6 text-[clamp(1.45rem,3vw,1.9rem)] text-off-white">
         {item.title}
       </h2>
       {item.publicDateLabel ? (

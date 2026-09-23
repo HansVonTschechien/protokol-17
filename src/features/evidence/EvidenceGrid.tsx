@@ -10,7 +10,7 @@ export function EvidenceGrid({ items }: { items: PublicEvidence[] }) {
 
   return (
     <>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <button
             key={item.id}
@@ -43,19 +43,19 @@ export function EvidenceGrid({ items }: { items: PublicEvidence[] }) {
       >
         {active ? (
           <div>
-            <div className="flex items-center justify-between gap-4 border-b border-line px-5 py-4">
-              <div>
-                <p className="font-mono text-[0.66rem] tracking-[0.18em] text-metal">
+            <div className="flex flex-col gap-4 border-b border-line px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+              <div className="min-w-0">
+                <p className="font-mono text-[0.66rem] tracking-[0.16em] text-metal">
                   Důkaz #{active.code}
                 </p>
-                <h2 className="mt-1 font-serif text-2xl">{active.title}</h2>
+                <h2 className="mt-1 font-serif text-2xl text-balance">{active.title}</h2>
               </div>
-              <button type="button" className="btn !min-h-10" onClick={() => setActive(null)}>
+              <button type="button" className="btn !min-h-11 w-full shrink-0 sm:w-auto" onClick={() => setActive(null)}>
                 Zavřít
               </button>
             </div>
             <div className="bg-black">
-              <div className="mx-auto max-h-[58vh] overflow-hidden">
+              <div className="mx-auto flex max-h-[58vh] items-center justify-center overflow-hidden">
                 <EvidenceAsset
                   src={active.assetPath}
                   alt={active.title}
@@ -63,7 +63,7 @@ export function EvidenceGrid({ items }: { items: PublicEvidence[] }) {
                 />
               </div>
             </div>
-            <div className="space-y-3 px-5 py-5 text-sm text-paper/90">
+            <div className="space-y-3 px-4 py-5 text-sm text-paper/90 sm:px-5">
               {active.datedLabel ? (
                 <p className="font-mono text-[0.68rem] text-metal">{active.datedLabel}</p>
               ) : null}

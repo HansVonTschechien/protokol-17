@@ -13,7 +13,7 @@ export default async function CharactersPage() {
   const people = await getPublicCharacters();
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <PageHeader kicker="Osoby v případu" title="Jména ve spisu">
         <p>
           Karty obsahují pouze základní údaje. Archiv neprozrazuje, kdo lže, kdo

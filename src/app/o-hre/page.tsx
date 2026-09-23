@@ -20,7 +20,7 @@ export default async function AboutPage() {
   ]);
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <PageHeader kicker={page.kicker} title={page.title} />
       <div className="mt-14 grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="max-w-2xl space-y-5 text-paper/90">
@@ -30,14 +30,14 @@ export default async function AboutPage() {
         </div>
         <dl className="dossier h-fit divide-y divide-line">
           {page.facts.map((fact) => (
-            <div key={fact.label} className="flex items-baseline justify-between gap-4 px-6 py-4">
-              <dt className="font-mono text-[0.66rem] uppercase tracking-[0.16em] text-metal">
+            <div key={fact.label} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-4 sm:px-6">
+              <dt className="font-mono text-[0.66rem] uppercase tracking-[0.14em] text-metal">
                 {fact.label}
               </dt>
-              <dd>{fact.value}</dd>
+              <dd className="min-w-0">{fact.value}</dd>
             </div>
           ))}
-          <div className="flex items-baseline justify-between gap-4 px-6 py-4">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-4 sm:px-6">
             <dt className="font-mono text-[0.66rem] uppercase tracking-[0.16em] text-metal">
               Verze
             </dt>

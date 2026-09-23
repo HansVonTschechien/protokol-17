@@ -8,7 +8,7 @@ export function Container({
   as?: "div" | "section" | "header" | "footer" | "main" | "nav";
 }) {
   return (
-    <Tag className={`mx-auto w-full max-w-6xl px-5 sm:px-8 ${className}`.trim()}>
+    <Tag className={`site-container ${className}`.trim()}>
       {children}
     </Tag>
   );

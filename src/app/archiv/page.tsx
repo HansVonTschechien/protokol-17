@@ -19,7 +19,7 @@ export default async function ArchivePage() {
   ]);
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <PageHeader kicker={page.kicker} title={page.title}>
         <p>{page.intro}</p>
         <p className="mt-4 text-sm text-metal-light">{page.notice}</p>

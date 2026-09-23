@@ -40,10 +40,10 @@ export default async function CaseDetailPage({ params }: Props) {
   const locked = record.status === "coming_soon" || record.status === "locked";
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <p className="kicker">Spis {formatCaseNumber(record.number)}</p>
       <div className="mt-4 flex flex-wrap items-center gap-4">
-        <h1 className="display-title text-4xl sm:text-6xl">{record.title}</h1>
+        <h1 className="display-title min-w-0 text-[clamp(2rem,7vw,3.5rem)]">{record.title}</h1>
         <Badge tone={locked ? "default" : "accent"}>
           {locked ? "🔒 Brzy" : record.status === "tutorial" ? "Tutoriál" : "Dostupné"}
         </Badge>
@@ -65,13 +65,13 @@ export default async function CaseDetailPage({ params }: Props) {
       {evidence.length > 0 ? (
         <section className="mt-16">
           <p className="kicker">Veřejné důkazy</p>
-          <h2 className="display-title mt-3 text-3xl">Materiál bez vyhodnocení</h2>
+          <h2 className="display-title mt-3 text-[clamp(1.6rem,4vw,2.1rem)]">Materiál bez vyhodnocení</h2>
           <div className="mt-8">
             <EvidenceGrid items={evidence} />
           </div>
         </section>
       ) : (
-        <section className="dossier mt-16 p-8">
+        <section className="dossier mt-12 p-5 sm:mt-16 sm:p-8">
           <p className="kicker">Stav</p>
           <p className="mt-4 max-w-xl text-paper/85">
             {locked

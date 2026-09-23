@@ -28,12 +28,12 @@ export function ArchiveBrowser({
             <Link
               key={item.id}
               href={caseHref(item.id)}
-              className="flex flex-col gap-2 py-5 no-underline sm:flex-row sm:items-baseline sm:justify-between"
+              className="flex flex-col gap-2 py-5 no-underline sm:flex-row sm:items-baseline sm:justify-between sm:gap-8"
             >
               <span className="font-mono text-[0.7rem] tracking-[0.2em] text-metal">
                 SPIS {formatCaseNumber(item.number)}
               </span>
-              <span className="font-serif text-2xl text-off-white">{item.title}</span>
+              <span className="font-serif text-2xl text-balance text-off-white">{item.title}</span>
             </Link>
           ))}
         </div>
@@ -56,19 +56,19 @@ export function ArchiveBrowser({
 
       <section>
         <p className="kicker">Cvičné důkazy</p>
-        <h2 className="display-title mt-3 text-3xl">Spis 00</h2>
+        <h2 className="display-title mt-3 text-[clamp(1.7rem,4vw,2.25rem)]">Spis 00</h2>
         <div className="mt-8">
           <EvidenceGrid items={evidence} />
         </div>
       </section>
 
       <section>
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="kicker">Osoby v případu</p>
-            <h2 className="display-title mt-3 text-3xl">Veřejný seznam</h2>
+            <h2 className="display-title mt-3 text-[clamp(1.7rem,4vw,2.25rem)]">Veřejný seznam</h2>
           </div>
-          <Link href="/osoby" className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-metal">
+          <Link href="/osoby" className="shrink-0 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-metal">
             Všichni
           </Link>
         </div>

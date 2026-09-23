@@ -27,7 +27,7 @@ export function EvidenceAsset({
       <img
         src={withBasePath(src)}
         alt={failed ? "" : alt}
-        className={`h-full w-full object-cover ${failed ? "invisible" : ""}`.trim()}
+        className={`h-full w-full object-contain ${failed ? "invisible" : ""}`.trim()}
         loading="lazy"
         onError={() => setFailed(true)}
       />

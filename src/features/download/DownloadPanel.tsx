@@ -5,19 +5,19 @@ export function DownloadPanel({ release }: { release: ReleaseConfig }) {
   const ready = release.available && Boolean(release.downloadUrl);
 
   return (
-    <div className="dossier p-8 sm:p-10">
+    <div className="dossier p-5 sm:p-10">
       <p className="kicker">macOS</p>
-      <h2 className="display-title mt-4 text-3xl sm:text-4xl">Stáhnout pro macOS</h2>
+      <h2 className="display-title mt-4 text-[clamp(1.7rem,4vw,2.4rem)]">Stáhnout pro macOS</h2>
       <p className="mt-4 max-w-xl text-paper/85">
         Vyžaduje {release.minimumMacOSLabel}. Aktuální verze {release.version}.
       </p>
       <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
         {ready ? (
-          <Button href={release.downloadUrl} variant="primary">
+          <Button href={release.downloadUrl} variant="primary" className="w-full sm:w-auto">
             Stáhnout pro macOS
           </Button>
         ) : (
-          <Button variant="primary" disabled aria-disabled="true">
+          <Button variant="primary" disabled aria-disabled="true" className="w-full sm:w-auto">
             Stáhnout pro macOS
           </Button>
         )}

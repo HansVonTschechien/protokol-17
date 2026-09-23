@@ -12,13 +12,13 @@ export default async function UpdatesPage() {
   const updates = await getUpdates();
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <PageHeader kicker="Aktualizace" title="Změny v archivu">
         <p>Veřejný přehled verzí hry a obsahu. Bez herních spoilerů.</p>
       </PageHeader>
       <ol className="mt-14 space-y-6">
         {updates.map((item) => (
-          <li key={item.id} className="dossier p-6 sm:p-8">
+          <li key={item.id} className="dossier p-5 sm:p-8">
             <p className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-metal">
               {item.version} · {item.datedLabel}
             </p>

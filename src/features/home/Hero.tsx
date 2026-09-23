@@ -4,26 +4,26 @@ import { SITE } from "@/config/site";
 
 export function Hero() {
   return (
-    <section className="relative isolate min-h-[100svh] overflow-hidden lamp-wash">
+    <section className="relative isolate min-h-[calc(100svh-4rem)] overflow-hidden lamp-wash">
       <div className="scan-line hidden md:block" />
       <HeroScene />
-      <Container className="relative z-10 flex min-h-[100svh] flex-col justify-end pb-16 pt-28 sm:pb-20">
-        <p className="font-mono text-[0.68rem] uppercase tracking-[0.28em] text-metal">
+      <Container className="relative z-10 flex min-h-[calc(100svh-4rem)] flex-col justify-end pb-10 pt-16 sm:pb-16 sm:pt-24">
+        <p className="max-w-full font-mono text-[0.62rem] uppercase leading-relaxed tracking-[0.12em] text-metal sm:text-[0.68rem] sm:tracking-[0.2em]">
           {SITE.classification}
         </p>
-        <h1 className="mt-8 font-mono text-sm tracking-[0.42em] text-paper sm:text-base">
+        <h1 className="mt-6 font-mono text-xs tracking-[0.28em] text-paper sm:mt-8 sm:text-sm sm:tracking-[0.42em]">
           PROTOKOL 17
         </h1>
-        <p className="display-title mt-6 max-w-3xl text-4xl text-off-white sm:text-6xl md:text-7xl">
+        <p className="display-title mt-5 max-w-3xl text-[clamp(2.05rem,8vw,4.6rem)] text-off-white">
           Některé případy
           <br />
           nikdy nebyly uzavřeny.
         </p>
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-          <Button href="/archiv" variant="primary">
+        <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row sm:items-center">
+          <Button href="/archiv" variant="primary" className="w-full sm:w-auto">
             Vstoupit do archivu
           </Button>
-          <p className="font-mono text-[0.72rem] uppercase tracking-[0.16em] text-metal-light">
+          <p className="font-mono text-[0.68rem] uppercase leading-relaxed tracking-[0.12em] text-metal-light sm:tracking-[0.16em]">
             Detektivní logická hra pro macOS
           </p>
         </div>
@@ -40,7 +40,7 @@ function HeroScene() {
       <div className="absolute right-[-8%] top-[12%] hidden w-[min(54vw,640px)] lg:block">
         <DeskStill />
       </div>
-      <div className="absolute right-4 top-28 w-40 opacity-60 sm:w-52 lg:hidden">
+      <div className="absolute right-3 top-6 w-28 opacity-50 sm:right-6 sm:top-10 sm:w-44 lg:hidden">
         <svg viewBox="0 0 132 84" className="h-auto w-full">
           <rect width="132" height="84" rx="4" fill="#1f1c18" stroke="#9a9790" strokeWidth="1" />
           <text x="16" y="38" fill="#cfc4ae" fontFamily="ui-monospace, monospace" fontSize="22">
@@ -51,7 +51,7 @@ function HeroScene() {
           </text>
         </svg>
       </div>
-      <div className="absolute bottom-[22%] left-[8%] hidden opacity-70 md:block">
+      <div className="absolute left-[5%] top-16 hidden opacity-70 xl:block">
         <Polaroid />
       </div>
     </div>
@@ -103,7 +103,7 @@ function DeskStill() {
 
 function Polaroid() {
   return (
-    <svg viewBox="0 0 180 210" className="h-44 w-auto rotate-[-8deg] opacity-80">
+    <svg viewBox="0 0 180 210" className="h-44 w-36 rotate-[-8deg] opacity-80">
       <rect width="180" height="210" fill="#e7e1d4" />
       <rect x="12" y="12" width="156" height="150" fill="#161410" />
       <rect x="28" y="78" width="124" height="56" fill="#2a261f" />

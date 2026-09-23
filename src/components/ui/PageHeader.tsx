@@ -10,7 +10,7 @@ export function PageHeader({
   return (
     <div className="max-w-3xl">
       <p className="kicker">{kicker}</p>
-      <h1 className="display-title mt-4 text-4xl text-off-white sm:text-5xl md:text-6xl">
+      <h1 className="display-title mt-4 text-[clamp(2rem,7vw,3.75rem)] text-off-white">
         {title}
       </h1>
       {children ? (

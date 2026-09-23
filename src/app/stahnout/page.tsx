@@ -16,7 +16,7 @@ export default async function DownloadPage() {
   ]);
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <PageHeader kicker={page.kicker} title={page.title}>
         <p>{page.body}</p>
       </PageHeader>

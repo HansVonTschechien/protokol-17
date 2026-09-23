@@ -14,7 +14,7 @@ export function Footer() {
               dokumenty do tohoto systému nepatří.
             </p>
           </div>
-          <nav className="grid grid-cols-2 gap-3 font-mono text-[0.68rem] uppercase tracking-[0.16em] text-metal">
+          <nav className="grid grid-cols-2 gap-x-4 gap-y-3 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-metal sm:tracking-[0.16em]">
             {NAV_ITEMS.map((item) => (
               <Link key={item.href} href={item.href} className="hover:text-off-white">
                 {item.label}
@@ -29,7 +29,7 @@ export function Footer() {
           </nav>
         </div>
         <hr className="rule mt-10" />
-        <p className="mt-6 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-metal">
+        <p className="mt-6 max-w-full font-mono text-[0.62rem] uppercase leading-relaxed tracking-[0.1em] text-metal sm:tracking-[0.16em]">
           {SITE.classification}
         </p>
       </Container>

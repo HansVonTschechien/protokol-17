@@ -20,40 +20,40 @@ export default async function HomePage() {
   return (
     <>
       <Hero />
-      <Container className="space-y-24 py-20 sm:py-28">
+      <Container className="page-section space-y-16 sm:space-y-24">
         <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="kicker">Premisa</p>
-            <h2 className="display-title mt-4 max-w-xl text-4xl sm:text-5xl">
+            <h2 className="display-title mt-4 max-w-xl text-[clamp(1.85rem,5vw,3rem)]">
               17. září 2009. Případ byl uzavřen.
             </h2>
             <div className="mt-8 max-w-xl space-y-4 text-paper/90">
               <p>Roman Havel byl nalezen mrtvý. O sedmnáct let později zemřel bývalý kriminalista Tomáš Růžička.</p>
               <p>Na místě po sobě zanechal jedinou věc. PROTOKOL 17.</p>
             </div>
-            <Link href="/pribeh" className="btn mt-8">
+            <Link href="/pribeh" className="btn mt-8 w-full sm:w-auto">
               Číst příběh
             </Link>
           </div>
-          <aside className="dossier p-8">
+          <aside className="dossier p-6 sm:p-8">
             <p className="kicker">Platforma</p>
             <p className="mt-5 font-serif text-3xl">macOS</p>
             <p className="mt-4 text-sm text-paper/80">
               Navrženo pro MacBook, trackpad a klávesnici. Verze {release.version}.
             </p>
-            <Link href="/stahnout" className="btn btn-primary mt-8">
+            <Link href="/stahnout" className="btn btn-primary mt-8 w-full sm:w-auto">
               Stáhnout hru
             </Link>
           </aside>
         </section>
 
         <section>
-          <div className="flex items-end justify-between gap-6">
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="kicker">Jak se hraje</p>
-              <h2 className="display-title mt-3 text-3xl sm:text-4xl">Vyšetřuj. Propojuj. Rozhoduj.</h2>
+              <h2 className="display-title mt-3 text-[clamp(1.7rem,4vw,2.4rem)]">Vyšetřuj. Propojuj. Rozhoduj.</h2>
             </div>
-            <Link href="/hra" className="hidden font-mono text-[0.68rem] uppercase tracking-[0.16em] text-metal sm:inline">
+            <Link href="/hra" className="font-mono text-[0.68rem] uppercase tracking-[0.14em] text-metal">
               Celý postup
             </Link>
           </div>
@@ -72,13 +72,13 @@ export default async function HomePage() {
 
         <section>
           <p className="kicker">Spisy</p>
-          <h2 className="display-title mt-3 text-3xl sm:text-4xl">Odemčené případy</h2>
+          <h2 className="display-title mt-3 text-[clamp(1.7rem,4vw,2.4rem)]">Odemčené případy</h2>
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
             {featured.map((item) => (
               <CaseCard key={item.id} item={item} featured />
             ))}
           </div>
-          <Link href="/pripady" className="btn mt-8">
+          <Link href="/pripady" className="btn mt-8 w-full sm:w-auto">
             Všechny spisy
           </Link>
         </section>

@@ -13,7 +13,7 @@ export default async function CasesPage() {
   const cases = await getPublicCases();
 
   return (
-    <Container className="py-16 sm:py-24">
+    <Container className="page-section">
       <PageHeader kicker="Případy" title="Sedmnáct spisů">
         <p>
           Veřejně jsou dostupné pouze odemčené informace. Budoucí případy zůstanou

@@ -12,19 +12,19 @@ export function CharacterCard({ person }: { person: PublicCharacter }) {
         />
       </div>
       <div className="p-5">
-        <h3 className="font-serif text-2xl text-off-white">{person.name}</h3>
-        <dl className="mt-4 space-y-2 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-metal-light">
-          <div className="flex justify-between gap-4">
-            <dt>Věk</dt>
-            <dd className="text-paper">{person.ageLabel}</dd>
+        <h3 className="font-serif text-2xl text-balance text-off-white">{person.name}</h3>
+        <dl className="mt-4 space-y-2 font-mono text-[0.64rem] uppercase tracking-[0.1em] text-metal-light sm:text-[0.68rem] sm:tracking-[0.14em]">
+          <div className="flex items-baseline justify-between gap-3">
+            <dt className="shrink-0">Věk</dt>
+            <dd className="min-w-0 text-right text-paper">{person.ageLabel}</dd>
           </div>
-          <div className="flex justify-between gap-4">
-            <dt>Povolání</dt>
-            <dd className="text-right text-paper">{person.occupation}</dd>
+          <div className="flex items-baseline justify-between gap-3">
+            <dt className="shrink-0">Povolání</dt>
+            <dd className="min-w-0 text-right text-paper">{person.occupation}</dd>
           </div>
-          <div className="flex justify-between gap-4">
-            <dt>Status</dt>
-            <dd className="text-paper">{person.statusLabel}</dd>
+          <div className="flex items-baseline justify-between gap-3">
+            <dt className="shrink-0">Status</dt>
+            <dd className="min-w-0 text-right text-paper">{person.statusLabel}</dd>
           </div>
         </dl>
       </div>
