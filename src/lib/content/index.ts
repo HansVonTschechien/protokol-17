@@ -1,6 +1,7 @@
 export { toPublicCase } from "./mappers";
 export {
   getRelease,
+  getDownloads,
   getPublicCases,
   getPublicCase,
   getPublicEvidence,

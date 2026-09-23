@@ -1,0 +1,217 @@
+{
+  "spoilerLevel": 0,
+  "hero": {
+    "titleLines": ["Některé případy", "nikdy nebyly uzavřeny."],
+    "subtitle": "Detektivní logická hra pro macOS, ve které vám nikdo neřekne, čemu věřit.",
+    "primaryCta": "Vstoupit do archivu",
+    "primaryHref": "/archiv",
+    "secondaryCta": "Zjistit více",
+    "secondaryHref": "#uvod",
+    "facts": ["macOS", "Singleplayer", "Detektivní · Puzzle · Mystery"]
+  },
+  "film": {
+    "date": "17. září 2009",
+    "lines": [
+      "Jedna noc.",
+      "Jeden mrtvý muž.",
+      "Jeden uzavřený případ.",
+      "A dokument, který neměl nikdy existovat."
+    ]
+  },
+  "whatIf": {
+    "kicker": "Otázky bez odpovědi",
+    "title": "Co když oficiální verze není celá pravda?",
+    "questions": [
+      "Co když svědek lže?",
+      "Co když čas nesedí?",
+      "Co když fotografie ukazuje něco, čeho si nikdo nevšiml?",
+      "Co když jedna identita není skutečná?",
+      "Co když nejdůležitější důkaz leží přímo před vámi?"
+    ],
+    "closing": "Dokázali byste poznat, kdy vám někdo říká pravdu?"
+  },
+  "evidence": {
+    "kicker": "Ukázka materiálu",
+    "title": "Důkazy nelžou.",
+    "subtitle": "Lidé ano.",
+    "notice": "Ukázkové položky nepatří k žádnému případu ve hře.",
+    "items": [
+      {
+        "id": "demo-014",
+        "code": "014",
+        "kind": "photo",
+        "label": "Fotografie",
+        "stamp": "17/09/2009",
+        "caption": "Snímek z cvičného materiálu. Bez místa, bez jmen, bez vyhodnocení."
+      },
+      {
+        "id": "demo-027",
+        "code": "027",
+        "kind": "phone",
+        "label": "Telefonní záznam",
+        "stamp": "22:41",
+        "caption": "Řádek z výpisu hovorů. Druhá strana není uvedena."
+      },
+      {
+        "id": "demo-031",
+        "code": "031",
+        "kind": "statement",
+        "label": "Výpověď svědka",
+        "stamp": "BEZ JMÉNA",
+        "caption": "Fragment výpovědi. Svědek zůstává anonymní."
+      },
+      {
+        "id": "demo-044",
+        "code": "044",
+        "kind": "ledger",
+        "label": "Hotelový záznam",
+        "stamp": "P-17",
+        "caption": "Řádek z knihy hostů. Jméno je začerněné."
+      }
+    ]
+  },
+  "puzzle": {
+    "kicker": "Cvičný rozpor",
+    "title": "Dokážete najít rozpor?",
+    "prompt": "Který důkaz zpochybňuje výpověď?",
+    "notice": "Tato hádanka není součástí příběhu hry.",
+    "successTitle": "Rozpor nalezen.",
+    "successBody": "V PROTOKOLU 17 nebude všechno tak jednoduché.",
+    "wrong": "Výpověď je tvrzení. Hledejte záznam, který jí časově odporuje.",
+    "items": [
+      {
+        "id": "statement",
+        "label": "Výpověď",
+        "body": "„Odešel jsem v 21:10.“",
+        "contradicts": false
+      },
+      {
+        "id": "photo",
+        "label": "Fotografie",
+        "body": "Na hodinách: 21:16",
+        "contradicts": true
+      },
+      {
+        "id": "receipt",
+        "label": "Účtenka",
+        "body": "21:19",
+        "contradicts": true
+      }
+    ]
+  },
+  "archive": {
+    "kicker": "Spisy 00–17",
+    "title": "Vyšetřovací archiv"
+  },
+  "people": {
+    "kicker": "Veřejné záznamy",
+    "title": "Lidé v archivu",
+    "href": "/osoby"
+  },
+  "protocol": {
+    "kicker": "Dokument",
+    "title": "Co je Protokol 17?",
+    "lines": [
+      "Nikdo přesně neví, kdy vznikl.",
+      "První zmínka se objevuje v archivních materiálech z roku 2009.",
+      "Dokument obsahuje sedmnáct označených položek.",
+      "Některé jsou jména.",
+      "Některé jsou pouze čísla.",
+      "Některé jsou úplně nečitelné."
+    ],
+    "closing": "Zbytek budete muset zjistit sami."
+  },
+  "gallery": {
+    "kicker": "Nalezené materiály",
+    "title": "Atmosférický archiv",
+    "items": [
+      { "id": "still-room", "kind": "room", "stamp": "ARCHIVE IMAGE · 17/09/2009", "caption": "Hotelový pokoj. Bez osoby v záběru." },
+      { "id": "still-desk", "kind": "desk", "stamp": "ARCHIVE IMAGE · 23:17", "caption": "Stůl s dokumenty." },
+      { "id": "still-recorder", "kind": "recorder", "stamp": "EVIDENCE PHOTO · UNKNOWN", "caption": "Diktafon. Nahrávka není přepsaná." },
+      { "id": "still-photo", "kind": "photo", "stamp": "EVIDENCE PHOTO · UNKNOWN", "caption": "Fotografie bez popisku." },
+      { "id": "still-phone", "kind": "phone", "stamp": "ARCHIVE IMAGE · 23:17", "caption": "Telefon. Číslo je nečitelné." },
+      { "id": "still-map", "kind": "map", "stamp": "ARCHIVE IMAGE · P-17", "caption": "Stará mapa. Místo není pojmenované." },
+      { "id": "still-file", "kind": "file", "stamp": "ARCHIVE 17", "caption": "Policejní spis. Obsah je zavřený." },
+      { "id": "still-envelope", "kind": "envelope", "stamp": "EVIDENCE PHOTO · UNKNOWN", "caption": "Obálka bez adresáta." },
+      { "id": "still-key", "kind": "key", "stamp": "ARCHIVE IMAGE · 17/09/2009", "caption": "Klíč. Zámek k němu v archivu není." },
+      { "id": "still-vhs", "kind": "vhs", "stamp": "ARCHIVE 17", "caption": "VHS kazeta. Přehrání není součástí webu." },
+      { "id": "still-door", "kind": "door", "stamp": "EVIDENCE PHOTO · UNKNOWN", "caption": "Dveře. Číslo pokoje je začerněné." },
+      { "id": "still-corridor", "kind": "corridor", "stamp": "ARCHIVE IMAGE · 23:17", "caption": "Chodba. Bez svědků." },
+      { "id": "still-cellar", "kind": "cellar", "stamp": "EVIDENCE PHOTO · UNKNOWN", "caption": "Sklep. Účel místnosti není uveden." },
+      { "id": "still-yard", "kind": "yard", "stamp": "ARCHIVE IMAGE · P-17", "caption": "Průmyslový areál. Bez popisu události." }
+    ]
+  },
+  "recordings": {
+    "kicker": "Audio",
+    "title": "Archivní nahrávky",
+    "notice": "Krátké cvičné věty. Nejsou ze spisů hry.",
+    "items": [
+      { "id": "rec-01", "code": "RECORDING 01", "stamp": "23:14", "status": "UNKNOWN", "line": "Některé věci se neměly dostat ven." },
+      { "id": "rec-02", "code": "RECORDING 02", "stamp": "23:17", "status": "UNKNOWN", "line": "Podívej se znovu na čas." },
+      { "id": "rec-03", "code": "RECORDING 03", "stamp": "00:17", "status": "UNKNOWN", "line": "Nejhorší chyba je věřit první verzi." }
+    ]
+  },
+  "drift": {
+    "title": "Každý detail může být důkaz.",
+    "items": ["17/09/2009", "23:17", "P-17", "ARCHIVE 17", "SPIS 00", "22:41", "BEZ JMÉNA", "17"]
+  },
+  "why": {
+    "kicker": "Bez odpovědi",
+    "title": "Proč Protokol 17?",
+    "questions": [
+      "Proč 17?",
+      "Proč 17. září?",
+      "Proč se číslo objevuje na různých dokumentech?",
+      "Je to náhoda?"
+    ]
+  },
+  "audience": {
+    "kicker": "Komu je hra určená",
+    "title": "Je to pro vás?",
+    "yesTitle": "Ano, pokud",
+    "noTitle": "Ne, pokud",
+    "yes": [
+      "milujete detektivky",
+      "baví vás logické hádanky",
+      "rádi hledáte detaily",
+      "baví vás EXIT deskovky",
+      "chcete příběh skutečně vyřešit",
+      "nechcete jen sledovat příběh, ale být jeho součástí"
+    ],
+    "no": [
+      "chcete čistou akční hru",
+      "nechcete číst dokumenty",
+      "nebaví vás přemýšlet nad detaily"
+    ]
+  },
+  "pace": {
+    "title": "Tady nemusíte být nejrychlejší.",
+    "lines": [
+      "Můžete se vracet k důkazům.",
+      "Můžete měnit své teorie.",
+      "Můžete si vést vlastní časovou osu.",
+      "Můžete se mýlit.",
+      "Důležité je zjistit, proč."
+    ]
+  },
+  "newsletter": {
+    "title": "Chcete vědět, kdy se otevře další spis?",
+    "placeholder": "váš email",
+    "action": "Přihlásit",
+    "note": "Žádný spam. Pouze nové případy, aktualizace a důležité informace.",
+    "pending": "Přihlášení zatím není napojené. Archiv si adresu neukládá."
+  },
+  "finale": {
+    "title": "Váš první případ čeká.",
+    "lines": [
+      "Otevřete archiv.",
+      "Prohlédněte důkazy.",
+      "Najděte rozpory.",
+      "Zjistěte, komu můžete věřit."
+    ],
+    "primary": "Stáhnout pro macOS",
+    "primaryHref": "/stahnout",
+    "secondary": "Prohlédnout případy",
+    "secondaryHref": "/pripady"
+  }
+}

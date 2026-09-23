@@ -9,10 +9,12 @@
     "requiredCase": null,
     "downloadSize": 18000000,
     "releaseDate": "2026-09-09",
-    "publicSummary": "Výcvikový případ.\n\nNauč se pracovat s důkazy, časovou osou a vazbami.",
+    "publicSummary": "Výcvikový případ.",
     "publicSetting": "Cvičný materiál",
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "spoilerLevel": 0,
+    "publicReveal": "full"
   },
   "evidence": [
     {

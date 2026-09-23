@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { SITE } from "@/config/site";
+import { siteConfig, SITE } from "@/config/site";
 
 export const dynamic = "force-static";
 export const alt = SITE.title;
@@ -42,7 +42,7 @@ export default function OpenGraphImage() {
               marginBottom: 24,
             }}
           >
-            PROTOKOL 17
+            {siteConfig.title}
           </div>
           <div style={{ fontSize: 64, lineHeight: 1.05, maxWidth: 900 }}>
             Některé případy nikdy nebyly uzavřeny.
@@ -56,7 +56,7 @@ export default function OpenGraphImage() {
             color: "#cfc4ae",
           }}
         >
-          <span>Detektivní logická hra pro macOS</span>
+          <span>{siteConfig.seoLine}</span>
           <span>SPIS 17</span>
         </div>
       </div>

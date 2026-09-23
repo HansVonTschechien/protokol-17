@@ -1,0 +1,48 @@
+{
+  "spoilerLevel": 0,
+  "kicker": "FAQ",
+  "title": "Časté otázky",
+  "intro": "Veřejné odpovědi o hře. Bez příběhu a bez řešení.",
+  "items": [
+    {
+      "question": "Na jaké platformě hra funguje?",
+      "answer": "macOS."
+    },
+    {
+      "question": "Potřebuji myš?",
+      "answer": "Ne. Hra je navržena pro trackpad a klávesnici."
+    },
+    {
+      "question": "Je hra v češtině?",
+      "answer": "Ano."
+    },
+    {
+      "question": "Je hra pro jednoho hráče?",
+      "answer": "Ano."
+    },
+    {
+      "question": "Jak dlouhé jsou případy?",
+      "answer": "Každý případ má vlastní rozsah podle obtížnosti a množství důkazů."
+    },
+    {
+      "question": "Budou přibývat nové případy?",
+      "answer": "Ano."
+    },
+    {
+      "question": "Musím hru kupovat z App Store?",
+      "answer": "Ne nutně. Distribuce bude řešena přímo."
+    },
+    {
+      "question": "Budu muset stahovat novou aplikaci pokaždé, když vyjde nový případ?",
+      "answer": "Cílem je distribuovat nové případy jako samostatný obsah."
+    },
+    {
+      "question": "Potřebuji internet?",
+      "answer": "Hra by měla podporovat hraní dostupných případů offline. Internet bude potřeba především pro stažení nového obsahu a aktualizace."
+    },
+    {
+      "question": "Je potřeba účet?",
+      "answer": "Základní hra účet nepotřebuje. Budoucí online funkce mohou účet nabídnout volitelně."
+    }
+  ]
+}

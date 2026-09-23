@@ -44,8 +44,12 @@ export default async function CaseDetailPage({ params }: Props) {
       <p className="kicker">Spis {formatCaseNumber(record.number)}</p>
       <div className="mt-4 flex flex-wrap items-center gap-4">
         <h1 className="display-title min-w-0 text-[clamp(2rem,7vw,3.5rem)]">{record.title}</h1>
-        <Badge tone={locked ? "default" : "accent"}>
-          {locked ? "🔒 Brzy" : record.status === "tutorial" ? "Tutoriál" : "Dostupné"}
+        <Badge tone={record.publicReveal === "full" ? "accent" : "default"}>
+          {record.publicReveal === "full"
+            ? "Dostupné"
+            : record.publicReveal === "teaser"
+              ? "Připravuje se"
+              : "Přístup omezen"}
         </Badge>
       </div>
       {record.publicDateLabel ? (
@@ -58,9 +62,19 @@ export default async function CaseDetailPage({ params }: Props) {
           {record.publicSetting}
         </p>
       ) : null}
-      <p className="mt-8 max-w-2xl whitespace-pre-line text-lg text-paper/90">
-        {record.publicSummary}
-      </p>
+      {record.publicReveal === "sealed" ? (
+        <div className="mt-8 max-w-md">
+          <p className="redact-bar" aria-hidden="true" />
+          <p className="redact-bar short" aria-hidden="true" />
+          <p className="mt-4 font-mono text-[0.66rem] uppercase tracking-[0.16em] text-metal">
+            Přístup omezen
+          </p>
+        </div>
+      ) : (
+        <p className="mt-8 max-w-2xl whitespace-pre-line text-lg text-paper/90">
+          {record.publicSummary}
+        </p>
+      )}
 
       {evidence.length > 0 ? (
         <section className="mt-16">

@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { SITE } from "@/config/site";
+import type { HomeContent } from "@/types/home";
 
-export function Hero() {
+export function Hero({ content }: { content: HomeContent["hero"] }) {
   return (
     <section className="relative isolate min-h-[calc(100svh-4rem)] overflow-hidden lamp-wash">
       <div className="scan-line hidden md:block" />
@@ -12,21 +13,29 @@ export function Hero() {
           {SITE.classification}
         </p>
         <h1 className="mt-6 font-mono text-xs tracking-[0.28em] text-paper sm:mt-8 sm:text-sm sm:tracking-[0.42em]">
-          PROTOKOL 17
+          {SITE.name}
         </h1>
         <p className="display-title mt-5 max-w-3xl text-[clamp(2.05rem,8vw,4.6rem)] text-off-white">
-          Některé případy
-          <br />
-          nikdy nebyly uzavřeny.
+          {content.titleLines.map((line) => (
+            <span key={line} className="block">
+              {line}
+            </span>
+          ))}
         </p>
-        <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row sm:items-center">
-          <Button href="/archiv" variant="primary" className="w-full sm:w-auto">
-            Vstoupit do archivu
+        <p className="mt-5 max-w-xl text-base text-paper/90 sm:text-lg">{content.subtitle}</p>
+        <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row">
+          <Button href={content.primaryHref} variant="primary" className="w-full sm:w-auto">
+            {content.primaryCta}
           </Button>
-          <p className="font-mono text-[0.68rem] uppercase leading-relaxed tracking-[0.12em] text-metal-light sm:tracking-[0.16em]">
-            Detektivní logická hra pro macOS
-          </p>
+          <Button href={content.secondaryHref} className="w-full sm:w-auto">
+            {content.secondaryCta}
+          </Button>
         </div>
+        <ul className="mt-6 flex flex-col gap-2 font-mono text-[0.66rem] uppercase tracking-[0.14em] text-metal sm:flex-row sm:flex-wrap sm:gap-x-6">
+          {content.facts.map((fact) => (
+            <li key={fact}>{fact}</li>
+          ))}
+        </ul>
       </Container>
     </section>
   );

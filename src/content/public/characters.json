@@ -6,8 +6,9 @@
     "occupation": "Novinářka",
     "statusLabel": "Osoba v spisu",
     "visibility": "public",
+    "spoilerLevel": 0,
     "portraitAsset": "/characters/char-klara-vachova.svg",
-    "publicNote": "Jméno evidováno ve veřejné části archivu."
+    "publicNote": "Jméno spojené s případem z roku 2009. Další informace nejsou v současnosti dostupné."
   },
   {
     "id": "char_petr_vach",
@@ -23,11 +24,12 @@
     "id": "char_roman_havel",
     "name": "Roman Havel",
     "ageLabel": "41 (2009)",
-    "occupation": "Obchodník",
+    "occupation": "Podnikatel",
     "statusLabel": "Záznam 2009",
     "visibility": "public",
+    "spoilerLevel": 0,
     "portraitAsset": "/characters/char-roman-havel.svg",
-    "publicNote": "Jméno je součástí veřejně známé premisy případu."
+    "publicNote": "Jeho jméno se objevuje v několika archivních dokumentech."
   },
   {
     "id": "char_michal_dolezal",
@@ -56,8 +58,9 @@
     "occupation": "Bývalý kriminalista",
     "statusLabel": "Záznam 2026",
     "visibility": "public",
+    "spoilerLevel": 0,
     "portraitAsset": "/characters/char-tomas-ruzicka.svg",
-    "publicNote": "Jméno je součástí veřejně známé premisy případu."
+    "publicNote": "V roce 2009 pracoval na případu, který měl být dávno uzavřen."
   },
   {
     "id": "char_jan_simek",

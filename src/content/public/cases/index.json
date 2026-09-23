@@ -10,10 +10,12 @@
     "requiredCase": null,
     "downloadSize": 18000000,
     "releaseDate": "2026-09-09",
-    "publicSummary": "Výcvikový případ.\n\nNauč se pracovat s důkazy, časovou osou a vazbami.",
+    "publicSummary": "Výcvikový případ.",
     "publicSetting": "Cvičný materiál",
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "full",
+    "spoilerLevel": 0
   },
   {
     "id": "case_01",
@@ -26,10 +28,12 @@
     "requiredCase": "case_00",
     "downloadSize": 154000000,
     "releaseDate": "2026-09-09",
-    "publicSummary": "Bývalý kriminalista Tomáš Růžička byl nalezen mrtvý ve svém pokoji.\n\nPřípad byl označen za sebevraždu.\n\nNěkteré důkazy však naznačují něco jiného.",
+    "publicSummary": "Jeden hotelový pokoj.\nJeden mrtvý muž.\nA několik detailů, které nesedí.",
     "publicSetting": "Hotel Aurora",
     "publicDateLabel": "17. září 2026",
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "full",
+    "spoilerLevel": 0
   },
   {
     "id": "case_02",
@@ -42,10 +46,12 @@
     "requiredCase": "case_01",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Některá místa zmizí z mapy.\nNeznamená to, že přestanou existovat.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "teaser",
+    "spoilerLevel": 0
   },
   {
     "id": "case_03",
@@ -58,10 +64,12 @@
     "requiredCase": "case_02",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Na snímku je někdo, koho archiv zatím neumí pojmenovat.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_04",
@@ -74,10 +82,12 @@
     "requiredCase": "case_03",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Některé zámky nepasují k žádným dveřím ve spisu.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_05",
@@ -90,10 +100,12 @@
     "requiredCase": "case_04",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Ne každý, kdo byl na místě, promluvil.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_06",
@@ -106,10 +118,12 @@
     "requiredCase": "case_05",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Někdo se k materiálům vracel dřív, než měly být otevřeny.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_07",
@@ -122,10 +136,12 @@
     "requiredCase": "case_06",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Jedna složka má jiné razítko než ostatní.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_08",
@@ -138,10 +154,12 @@
     "requiredCase": "case_07",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Někdo přišel. Záznam o odchodu chybí.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_09",
@@ -154,10 +172,12 @@
     "requiredCase": "case_08",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Jména na kamenech a jména ve spisu se úplně nekryjí.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_10",
@@ -170,10 +190,12 @@
     "requiredCase": "case_09",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Hovor skončil. Druhá strana zůstala neznámá.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_11",
@@ -186,10 +208,12 @@
     "requiredCase": "case_10",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Dům stojí tam, kde ho mapy někdy vynechávají.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_12",
@@ -202,10 +226,12 @@
     "requiredCase": "case_11",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Seznam má sedmnáct řádků. Ne všechny jsou čitelné.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_13",
@@ -218,10 +244,12 @@
     "requiredCase": "case_12",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Hotel má víc pokojů, než kolik jich hosté nahlásili.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_14",
@@ -234,10 +262,12 @@
     "requiredCase": "case_13",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "V evidenci chybí dokument, o kterém se mluví.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_15",
@@ -250,10 +280,12 @@
     "requiredCase": "case_14",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Číslování svědků ve spisu nesedí.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_16",
@@ -266,10 +298,12 @@
     "requiredCase": "case_15",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Některé materiály nesou datum, které neměly.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   },
   {
     "id": "case_17",
@@ -282,9 +316,11 @@
     "requiredCase": "case_16",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Poslední spis zůstává zavřený.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "publicReveal": "sealed",
+    "spoilerLevel": 0
   }
 ]

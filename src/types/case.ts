@@ -1,3 +1,4 @@
+import type { RevealState, SpoilerLevel } from "./spoiler";
 import type { ContentVisibility } from "./visibility";
 
 export type CaseStatus =
@@ -21,6 +22,9 @@ export type CaseRecord = {
   publicSetting?: string | null;
   publicDateLabel?: string | null;
   coverAsset: string | null;
+  spoilerLevel?: SpoilerLevel;
+  /** Controls how much of the public summary the website may print. */
+  publicReveal?: RevealState;
 };
 
 /** Public DTO — no solutions, no hidden identities, no full timeline. */
@@ -38,4 +42,6 @@ export type PublicCase = {
   publicSetting: string | null;
   publicDateLabel: string | null;
   coverAsset: string | null;
+  spoilerLevel: 0 | 1;
+  publicReveal: RevealState;
 };

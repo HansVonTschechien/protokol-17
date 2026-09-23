@@ -2,28 +2,27 @@ import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { DownloadPanel } from "@/features/download/DownloadPanel";
-import { getPageContent, getRelease } from "@/lib/content/repository";
+import { getDownloads, getPageContent } from "@/lib/content/repository";
 
 export const metadata: Metadata = {
-  title: "Stáhnout",
-  description: "Stáhnout PROTOKOL 17 pro macOS.",
+  title: "Stažení",
+  description:
+    "Distribuční portál PROTOKOL 17. Odkaz ke stažení se zobrazí až u platformy, která je vydaná.",
 };
 
 export default async function DownloadPage() {
-  const [page, release] = await Promise.all([
+  const [page, downloads] = await Promise.all([
     getPageContent<{ kicker: string; title: string; body: string; note: string }>("download"),
-    getRelease(),
+    getDownloads(),
   ]);
 
   return (
     <Container className="page-section">
-      <PageHeader kicker={page.kicker} title={page.title}>
-        <p>{page.body}</p>
+      <PageHeader kicker={page.kicker} title={downloads.title}>
+        <p>{downloads.subtitle}</p>
       </PageHeader>
-      <div className="mt-12">
-        <DownloadPanel release={release} />
-      </div>
-      <p className="mt-6 max-w-xl text-sm text-metal-light">{page.note}</p>
+      <DownloadPanel downloads={downloads} />
+      <p className="mt-8 max-w-xl text-sm text-metal-light">{page.note}</p>
     </Container>
   );
 }

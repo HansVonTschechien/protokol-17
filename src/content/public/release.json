@@ -3,8 +3,8 @@
   "gameVersion": "1.0.0",
   "contentVersion": "1.0.0",
   "downloadUrl": "",
-  "minimumMacOS": "13.0",
-  "minimumMacOSLabel": "macOS 13 Ventura",
+  "minimumMacOS": "14.0",
+  "minimumMacOSLabel": "macOS 14+",
   "available": false,
   "releasedAt": "2026-09-09"
 }

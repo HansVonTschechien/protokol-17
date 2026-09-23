@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { toPublicDownloads } from "../src/lib/content/public-downloads.mjs";
 
 const ROOT = path.join(process.cwd(), "src/content/public");
 const OUT = path.join(process.cwd(), "public/api");
@@ -15,8 +16,15 @@ async function writeJson(relativePath, data) {
   await writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
+function isPublic(record) {
+  if (record.visibility !== "public") return false;
+  return (record.spoilerLevel ?? 0) <= 1;
+}
+
 function publicCase(record) {
-  if (record.visibility !== "public") return null;
+  if (!isPublic(record)) return null;
+  const spoilerLevel = record.spoilerLevel === 1 ? 1 : 0;
+  const publicReveal = record.publicReveal ?? (record.available ? "full" : "sealed");
   return {
     id: record.id,
     number: record.number,
@@ -27,15 +35,17 @@ function publicCase(record) {
     requiredCase: record.requiredCase,
     downloadSize: record.downloadSize,
     releaseDate: record.releaseDate,
-    publicSummary: record.publicSummary,
+    publicSummary: publicReveal === "sealed" ? "" : record.publicSummary,
     publicSetting: record.publicSetting ?? null,
     publicDateLabel: record.publicDateLabel ?? null,
     coverAsset: record.coverAsset,
+    spoilerLevel,
+    publicReveal,
   };
 }
 
 function publicEvidence(record) {
-  if (record.visibility !== "public") return null;
+  if (!isPublic(record)) return null;
   return {
     id: record.id,
     caseId: record.caseId,
@@ -99,5 +109,8 @@ for (const item of cases) {
     evidence,
   });
 }
+
+const downloads = await readJson("downloads.json");
+await writeJson("downloads.json", toPublicDownloads(downloads));
 
 console.log(`Exported public API files to ${OUT}`);

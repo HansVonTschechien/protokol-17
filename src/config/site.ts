@@ -12,11 +12,42 @@ export const NAV_ITEMS: NavItem[] = [
   { href: "/o-hre", label: "O hře" },
 ];
 
+export const FOOTER_LINKS: NavItem[] = [
+  { href: "/hra", label: "Hra" },
+  { href: "/pripady", label: "Případy" },
+  { href: "/archiv", label: "Archiv" },
+  { href: "/stahnout", label: "Stažení" },
+  { href: "/o-projektu", label: "O projektu" },
+  { href: "/kontakt", label: "Kontakt" },
+];
+
+export const LEGAL_LINKS: NavItem[] = [
+  { href: "/ochrana-soukromi", label: "Ochrana soukromí" },
+  { href: "/podminky", label: "Podmínky" },
+  { href: "/kontakt", label: "Kontakt" },
+];
+
+const author = "Jan Honc";
+const authorGenitive = "Jana Honce";
+
+export const siteConfig = {
+  title: "PROTOKOL 17",
+  author,
+  authorGenitive,
+  authorRole: "Autor · Scenárista · Developer",
+  authorLabel: "Autor",
+  roleLabel: "Role",
+  copyright: `© 2026 ${author}`,
+  rights: `© 2026 ${author}. Všechna práva vyhrazena.`,
+  footerTagline: `Detektivní hra od ${authorGenitive}.`,
+  seoLine: `Autorský projekt ${authorGenitive}`,
+} as const;
+
 export const SITE = {
-  name: "PROTOKOL 17",
+  ...siteConfig,
+  name: siteConfig.title,
   tagline: "Detektivní logická hra pro macOS",
-  title: "PROTOKOL 17 — Detektivní hra",
-  description:
-    "Vyšetřuj. Propojuj důkazy. Odhal pravdu. PROTOKOL 17 je detektivní logická hra pro macOS.",
+  title: `${siteConfig.title} — Detektivní hra`,
+  description: siteConfig.seoLine,
   classification: "Digitální archiv · Veřejná část · Stupeň: omezený",
 } as const;

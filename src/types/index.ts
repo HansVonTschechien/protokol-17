@@ -1,4 +1,5 @@
 export type { ContentVisibility } from "./visibility";
+export type { SpoilerLevel, RevealState } from "./spoiler";
 export type { CaseStatus, CaseRecord, PublicCase } from "./case";
 export type {
   EvidenceType,
@@ -14,4 +15,17 @@ export type {
   VersionPayload,
   ReleaseConfig,
 } from "./manifest";
+export type {
+  PlatformStatus,
+  GamePlatform,
+  DownloadFormat,
+  PlatformSpec,
+  DownloadArtifact,
+  PlatformDownload,
+  GameRelease,
+  DownloadsCatalog,
+  PublicDownloadArtifact,
+  PublicPlatformDownload,
+  PublicDownloads,
+} from "./download";
 export type { UpdateEntry } from "./updates";

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0",
   "latest": true,
   "releasedAt": "2026-09-09",
-  "minimumMacOS": "13.0",
+  "minimumMacOS": "14.0",
   "cases": [
     {
       "id": "case_00",

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { siteConfig } from "@/config/site";
 import { getPageContent, getRelease } from "@/lib/content/repository";
 
 export const metadata: Metadata = {
@@ -37,6 +39,16 @@ export default async function AboutPage() {
               <dd className="min-w-0">{fact.value}</dd>
             </div>
           ))}
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-4 sm:px-6">
+            <dt className="font-mono text-[0.66rem] uppercase tracking-[0.16em] text-metal">
+              {siteConfig.authorLabel}
+            </dt>
+            <dd>
+              <Link href="/o-projektu" className="hover:text-off-white">
+                {siteConfig.author}
+              </Link>
+            </dd>
+          </div>
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-5 py-4 sm:px-6">
             <dt className="font-mono text-[0.66rem] uppercase tracking-[0.16em] text-metal">
               Verze

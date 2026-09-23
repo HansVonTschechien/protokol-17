@@ -1,0 +1,186 @@
+{
+  "spoilerLevel": 0,
+  "title": "Stažení",
+  "subtitle": "Vyberte platformu. Zbytek případu už je na vás.",
+  "summary": {
+    "versionLabel": "Aktuální verze",
+    "updatedLabel": "Poslední aktualizace",
+    "changelogLabel": "Co je nového",
+    "emptyVersion": "Není vydána",
+    "emptyUpdated": "—",
+    "emptyChangelog": "Změny se zveřejní s prvním sestavením."
+  },
+  "statusLabels": {
+    "available": "Dostupné",
+    "coming_soon": "Plánováno",
+    "development": "Připravujeme",
+    "unavailable": "Nedostupné"
+  },
+  "releases": [
+    {
+      "version": "1.0.0",
+      "platform": "macos",
+      "releaseDate": "",
+      "status": "development",
+      "changelog": []
+    }
+  ],
+  "platforms": [
+    {
+      "id": "macos",
+      "name": "macOS",
+      "platform": "macos",
+      "status": "development",
+      "actionLabel": "Stáhnout pro macOS",
+      "pendingLabel": "Připravujeme",
+      "minimumVersion": "macOS 14+",
+      "architecture": "Apple Silicon",
+      "notes": "Přímá distribuce mimo App Store. Veřejné sestavení ještě není vydané.",
+      "specs": [
+        { "label": "Systém", "value": "macOS 14+" },
+        { "label": "Architektura", "value": "Apple Silicon" },
+        { "label": "Distribuce", "value": "Mimo App Store" },
+        { "label": "Formát", "value": "DMG" }
+      ],
+      "artifacts": [
+        {
+          "id": "macos-silicon-dmg",
+          "label": "Apple Silicon",
+          "format": "dmg",
+          "architecture": "arm64",
+          "status": "development",
+          "visible": true
+        },
+        {
+          "id": "macos-silicon-zip",
+          "label": "Apple Silicon",
+          "format": "zip",
+          "architecture": "arm64",
+          "status": "development",
+          "visible": false
+        },
+        {
+          "id": "macos-intel-dmg",
+          "label": "Intel",
+          "format": "dmg",
+          "architecture": "x64",
+          "status": "unavailable",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "platform": "windows",
+      "status": "development",
+      "actionLabel": "Stáhnout pro Windows",
+      "pendingLabel": "Připravujeme",
+      "minimumVersion": "Windows 10 / 11",
+      "architecture": "x64",
+      "notes": "Přímá distribuce. Instalátor ještě není vydaný.",
+      "specs": [
+        { "label": "Systém", "value": "Windows 10 / 11" },
+        { "label": "Architektura", "value": "x64" }
+      ],
+      "artifacts": [
+        {
+          "id": "windows-exe",
+          "label": "Instalátor",
+          "format": "exe",
+          "architecture": "x64",
+          "status": "development",
+          "visible": false
+        },
+        {
+          "id": "windows-msi",
+          "label": "MSI",
+          "format": "msi",
+          "architecture": "x64",
+          "status": "development",
+          "visible": false
+        },
+        {
+          "id": "windows-portable",
+          "label": "Portable",
+          "format": "portable",
+          "architecture": "x64",
+          "status": "development",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "ios",
+      "name": "iPhone",
+      "platform": "ios",
+      "status": "development",
+      "actionLabel": "App Store",
+      "pendingLabel": "Připravujeme",
+      "notes": "Samostatná položka. Odkaz do App Store se doplní při vydání.",
+      "specs": [
+        { "label": "Kanál", "value": "App Store" },
+        { "label": "Kompatibilita", "value": "—" }
+      ]
+    },
+    {
+      "id": "ipados",
+      "name": "iPad",
+      "platform": "ipados",
+      "status": "development",
+      "actionLabel": "App Store",
+      "pendingLabel": "Připravujeme",
+      "notes": "Samostatná platforma. Odkaz může být stejný jako u iPhonu, až bude vydaný.",
+      "specs": [
+        { "label": "Kanál", "value": "App Store" },
+        { "label": "Zobrazení", "value": "Optimalizováno pro iPad" }
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "platform": "android",
+      "status": "development",
+      "actionLabel": "Google Play",
+      "pendingLabel": "Připravujeme",
+      "notes": "Distribuce přes Google Play. Odkaz se doplní při vydání.",
+      "specs": [
+        { "label": "Kanál", "value": "Google Play" },
+        { "label": "Systém", "value": "—" }
+      ],
+      "artifacts": [
+        {
+          "id": "android-apk",
+          "label": "APK",
+          "format": "apk",
+          "status": "unavailable",
+          "visible": false
+        }
+      ]
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "platform": "linux",
+      "status": "unavailable",
+      "actionLabel": "Stáhnout pro Linux",
+      "pendingLabel": "Připravujeme"
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "platform": "steam",
+      "status": "unavailable",
+      "actionLabel": "Steam",
+      "pendingLabel": "Připravujeme"
+    },
+    {
+      "id": "epic",
+      "name": "Epic Games Store",
+      "platform": "epic",
+      "status": "unavailable",
+      "actionLabel": "Epic Games Store",
+      "pendingLabel": "Připravujeme"
+    }
+  ]
+}

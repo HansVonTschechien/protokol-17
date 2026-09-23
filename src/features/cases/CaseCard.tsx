@@ -3,11 +3,10 @@ import { Badge } from "@/components/ui/Badge";
 import { caseHref, formatCaseNumber } from "@/lib/format";
 import type { PublicCase } from "@/types";
 
-const STATUS_LABEL: Record<PublicCase["status"], string> = {
-  tutorial: "Tutoriál",
-  available: "Dostupné",
-  coming_soon: "Připravuje se",
-  locked: "Brzy",
+const STATUS_LABEL: Record<PublicCase["publicReveal"], string> = {
+  full: "Dostupné",
+  teaser: "Připravuje se",
+  sealed: "Přístup omezen",
 };
 
 export function CaseCard({
@@ -17,7 +16,7 @@ export function CaseCard({
   item: PublicCase;
   featured?: boolean;
 }) {
-  const locked = item.status === "coming_soon" || item.status === "locked";
+  const locked = item.publicReveal !== "full";
   const href = caseHref(item.id);
   const number = formatCaseNumber(item.number);
 
@@ -30,8 +29,8 @@ export function CaseCard({
           SPIS {number}
         </p>
         <span className="shrink-0">
-          <Badge tone={item.status === "available" || item.status === "tutorial" ? "accent" : "default"}>
-            {locked ? "🔒 Brzy" : item.status === "tutorial" ? "✓ Tutoriál" : STATUS_LABEL[item.status]}
+          <Badge tone={item.publicReveal === "full" ? "accent" : "default"}>
+            {STATUS_LABEL[item.publicReveal]}
           </Badge>
         </span>
       </div>
@@ -43,9 +42,19 @@ export function CaseCard({
           {item.publicDateLabel}
         </p>
       ) : null}
-      <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-paper/80">
-        {item.publicSummary}
-      </p>
+      {item.publicReveal === "sealed" ? (
+        <div className="mt-4">
+          <p className="redact-bar" aria-hidden="true" />
+          <p className="redact-bar short" aria-hidden="true" />
+          <p className="mt-4 font-mono text-[0.66rem] uppercase tracking-[0.16em] text-metal">
+            Přístup omezen
+          </p>
+        </div>
+      ) : (
+        <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-paper/80">
+          {item.publicSummary}
+        </p>
+      )}
     </article>
   );
 

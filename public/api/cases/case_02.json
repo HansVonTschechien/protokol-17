@@ -9,9 +9,11 @@
     "requiredCase": "case_01",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "Některá místa zmizí z mapy.\nNeznamená to, že přestanou existovat.",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "spoilerLevel": 0,
+    "publicReveal": "teaser"
   }
 }

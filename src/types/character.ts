@@ -1,3 +1,4 @@
+import type { SpoilerLevel } from "./spoiler";
 import type { ContentVisibility } from "./visibility";
 
 export type CharacterRecord = {
@@ -7,6 +8,7 @@ export type CharacterRecord = {
   occupation: string;
   statusLabel: string;
   visibility: ContentVisibility;
+  spoilerLevel?: SpoilerLevel;
   portraitAsset: string | null;
   publicNote: string | null;
 };

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
-import { SITE } from "@/config/site";
+import { siteConfig, SITE } from "@/config/site";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -39,10 +39,13 @@ export const metadata: Metadata = {
     default: SITE.title,
     template: `%s — ${SITE.name}`,
   },
-  description: SITE.description,
+  description: siteConfig.seoLine,
   applicationName: SITE.name,
+  authors: [{ name: siteConfig.author }],
+  creator: siteConfig.author,
   keywords: [
-    "PROTOKOL 17",
+    siteConfig.title,
+    siteConfig.author,
     "detektivní hra",
     "macOS",
     "puzzle",
@@ -51,7 +54,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: SITE.title,
-    description: SITE.description,
+    description: siteConfig.seoLine,
     locale: "cs_CZ",
     type: "website",
     siteName: SITE.name,
@@ -59,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: SITE.title,
-    description: SITE.description,
+    description: siteConfig.seoLine,
   },
   robots: {
     index: true,

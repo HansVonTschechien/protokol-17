@@ -16,7 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/osoby",
     "/stahnout",
     "/o-hre",
+    "/o-projektu",
     "/aktualizace",
+    "/faq",
+    "/kontakt",
+    "/ochrana-soukromi",
+    "/podminky",
   ];
 
   const origin = siteUrl.replace(/\/$/, "");

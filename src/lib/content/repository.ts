@@ -3,6 +3,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { toPublicCase } from "@/lib/content/mappers";
+import { isPubliclyVisible, isWithinPublicSpoilerCeiling } from "@/lib/content/spoiler";
 import type {
   CaseRecord,
   CharacterRecord,
@@ -12,11 +13,15 @@ import type {
   PublicCharacter,
   PublicEvidence,
   PublicTimelineEvent,
+  DownloadsCatalog,
+  PublicDownloads,
   ReleaseConfig,
   TimelineEventRecord,
   UpdateEntry,
 } from "@/types";
+import { toPublicDownloads } from "./public-downloads.mjs";
 
+/** Only the public tree is readable here. `src/content/private` and `src/content/game` stay out of the site. */
 const PUBLIC_ROOT = path.join(process.cwd(), "src/content/public");
 
 async function readJson<T>(relativePath: string): Promise<T> {
@@ -26,7 +31,7 @@ async function readJson<T>(relativePath: string): Promise<T> {
 }
 
 function toPublicEvidence(record: EvidenceRecord): PublicEvidence | null {
-  if (record.visibility !== "public") return null;
+  if (!isPubliclyVisible(record)) return null;
   return {
     id: record.id,
     caseId: record.caseId,
@@ -41,7 +46,7 @@ function toPublicEvidence(record: EvidenceRecord): PublicEvidence | null {
 }
 
 function toPublicCharacter(record: CharacterRecord): PublicCharacter | null {
-  if (record.visibility !== "public") return null;
+  if (!isPubliclyVisible(record)) return null;
   return {
     id: record.id,
     name: record.name,
@@ -56,7 +61,7 @@ function toPublicCharacter(record: CharacterRecord): PublicCharacter | null {
 function toPublicTimeline(
   record: TimelineEventRecord,
 ): PublicTimelineEvent | null {
-  if (record.visibility !== "public") return null;
+  if (!isPubliclyVisible(record)) return null;
   return {
     id: record.id,
     caseId: record.caseId,
@@ -69,6 +74,14 @@ function toPublicTimeline(
 
 export async function getRelease(): Promise<ReleaseConfig> {
   return readJson<ReleaseConfig>("release.json");
+}
+
+export async function getDownloads(): Promise<PublicDownloads> {
+  const catalog = await readJson<DownloadsCatalog>("downloads.json");
+  if (!isWithinPublicSpoilerCeiling(catalog.spoilerLevel)) {
+    throw new Error("Downloads catalog is above the spoiler ceiling.");
+  }
+  return toPublicDownloads(catalog) as PublicDownloads;
 }
 
 export async function getPublicCases(): Promise<PublicCase[]> {
@@ -121,6 +134,14 @@ export async function getUpdates(): Promise<UpdateEntry[]> {
 
 export async function getPageContent<T>(name: string): Promise<T> {
   return readJson<T>(`pages/${name}.json`);
+}
+
+export async function getPublicPage<T>(name: string): Promise<T> {
+  const page = await getPageContent<T & { spoilerLevel?: number }>(name);
+  if (!isWithinPublicSpoilerCeiling(page.spoilerLevel)) {
+    throw new Error(`Public page "${name}" is above the spoiler ceiling.`);
+  }
+  return page;
 }
 
 export async function getManifest(): Promise<ContentManifest> {

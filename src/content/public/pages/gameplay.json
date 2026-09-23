@@ -1,37 +1,38 @@
 {
+  "spoilerLevel": 0,
   "kicker": "Hra",
   "title": "Jak se vyšetřuje",
-  "intro": "PROTOKOL 17 je detektivní logická hra. Neovládáš střílečku. Čteš, porovnáváš, spojuješ a rozhoduješ.",
+  "intro": "PROTOKOL 17 je detektivní logická hra. Neovládáte střílečku. Čtete, porovnáváte, spojujete a rozhodujete.",
   "sections": [
     {
-      "id": "evidence",
+      "id": "look",
       "number": "01",
-      "title": "Prohlížej důkazy",
-      "body": "Dokumenty, fotografie, výpovědi, telefonní záznamy a další materiály. Každý důkaz je samostatný spis. Nic není jen dekorace."
+      "title": "Prohlížej",
+      "body": "Prozkoumejte fotografie, dokumenty, nahrávky, telefonní záznamy a další materiály."
     },
     {
-      "id": "contradictions",
+      "id": "search",
       "number": "02",
-      "title": "Hledej rozpory",
-      "body": "Ne všechno, co svědci říkají, je pravda. Některé věty sedí. Některé se rozcházejí. Některé měly zůstat nevyslovené."
+      "title": "Hledej",
+      "body": "Drobnosti mohou změnit význam celého případu."
     },
     {
       "id": "connect",
       "number": "03",
       "title": "Propojuj",
-      "body": "Spojuj důkazy a vytvářej vlastní teorie. Archiv ti nic nevnucuje. Souvislosti musíš najít sama."
+      "body": "Spojujte důkazy a vytvářejte vlastní teorie."
     },
     {
       "id": "reconstruct",
       "number": "04",
       "title": "Rekonstruuj",
-      "body": "Sestav časovou osu událostí. Kdy kdo kam šel. Co bylo řečeno. Co mělo být zničeno."
+      "body": "Sestavte časovou osu a zjistěte, co se skutečně stalo."
     },
     {
       "id": "decide",
       "number": "05",
-      "title": "Rozhoduj",
-      "body": "Nakonec musíš sama určit, co se skutečně stalo. Hra neukáže závěrečné skóre. Ukázaná je jen tvoje jistota."
+      "title": "Rozhodni",
+      "body": "Nakonec budete muset sami určit, kterým důkazům věříte."
     }
   ]
 }

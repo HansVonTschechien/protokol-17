@@ -9,9 +9,11 @@
     "requiredCase": "case_06",
     "downloadSize": null,
     "releaseDate": null,
-    "publicSummary": "Veřejný archiv zatím neobsahuje žádné uvolněné materiály.",
+    "publicSummary": "",
     "publicSetting": null,
     "publicDateLabel": null,
-    "coverAsset": null
+    "coverAsset": null,
+    "spoilerLevel": 0,
+    "publicReveal": "sealed"
   }
 }
