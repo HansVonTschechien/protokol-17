@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { platformDots } from "@/config/platforms.mjs";
 import { SITE } from "@/config/site";
 import type { HomeContent } from "@/types/home";
 
@@ -32,7 +33,7 @@ export function Hero({ content }: { content: HomeContent["hero"] }) {
           </Button>
         </div>
         <ul className="mt-6 flex flex-col gap-2 font-mono text-[0.66rem] uppercase tracking-[0.14em] text-metal sm:flex-row sm:flex-wrap sm:gap-x-6">
-          {content.facts.map((fact) => (
+          {[platformDots(), ...content.facts].map((fact) => (
             <li key={fact}>{fact}</li>
           ))}
         </ul>

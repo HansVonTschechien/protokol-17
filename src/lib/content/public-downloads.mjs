@@ -1,3 +1,5 @@
+import { platforms as platformRoster } from "../../config/platforms.mjs";
+
 const STATUSES = new Set(["available", "coming_soon", "development", "unavailable"]);
 
 export function isReleaseUrl(value) {
@@ -52,8 +54,31 @@ function publishedStatus(item) {
   return item.status;
 }
 
+function alignPlatformRoster(catalog) {
+  const byId = new Map((catalog.platforms ?? []).map((item) => [item?.id, item]));
+  const known = new Set(platformRoster.map((item) => item.id));
+  const primary = platformRoster.map((entry) => {
+    const detail = byId.get(entry.id) ?? {
+      actionLabel: entry.name,
+      pendingLabel: "Připravujeme",
+      specs: [],
+      artifacts: [],
+    };
+    return {
+      ...detail,
+      id: entry.id,
+      name: entry.name,
+      platform: entry.id,
+      status: entry.status,
+    };
+  });
+  const extras = (catalog.platforms ?? []).filter((item) => item && !known.has(item.id));
+  return { ...catalog, platforms: [...primary, ...extras] };
+}
+
 export function toPublicDownloads(catalog) {
-  const platforms = (catalog.platforms ?? [])
+  const aligned = alignPlatformRoster(catalog);
+  const platforms = (aligned.platforms ?? [])
     .map((item) => {
       if (!item) return null;
       const status = publishedStatus(item);
@@ -89,7 +114,7 @@ export function toPublicDownloads(catalog) {
     })
     .filter(Boolean);
 
-  const releases = (catalog.releases ?? [])
+  const releases = (aligned.releases ?? [])
     .map((item) => {
       if (!item) return null;
       const status = publishedStatus(item);
@@ -110,10 +135,10 @@ export function toPublicDownloads(catalog) {
     .filter(Boolean);
 
   return {
-    title: catalog.title,
-    subtitle: catalog.subtitle,
-    summary: catalog.summary,
-    statusLabels: catalog.statusLabels,
+    title: aligned.title,
+    subtitle: aligned.subtitle,
+    summary: aligned.summary,
+    statusLabels: aligned.statusLabels,
     releases,
     platforms,
   };

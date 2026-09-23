@@ -11,7 +11,7 @@
   },
   "statusLabels": {
     "available": "Dostupné",
-    "coming_soon": "Plánováno",
+    "coming_soon": "Připravujeme",
     "development": "Připravujeme",
     "unavailable": "Nedostupné"
   },
@@ -60,7 +60,7 @@
       "id": "windows",
       "name": "Windows",
       "platform": "windows",
-      "status": "development",
+      "status": "coming_soon",
       "minimumVersion": "Windows 10 / 11",
       "architecture": "x64",
       "notes": "Přímá distribuce. Instalátor ještě není vydaný.",
@@ -80,10 +80,10 @@
       "changelog": []
     },
     {
-      "id": "ios",
+      "id": "iphone",
       "name": "iPhone",
-      "platform": "ios",
-      "status": "development",
+      "platform": "iphone",
+      "status": "coming_soon",
       "notes": "Samostatná položka. Odkaz do App Store se doplní při vydání.",
       "actionLabel": "App Store",
       "pendingLabel": "Připravujeme",
@@ -101,10 +101,10 @@
       "changelog": []
     },
     {
-      "id": "ipados",
+      "id": "ipad",
       "name": "iPad",
-      "platform": "ipados",
-      "status": "development",
+      "platform": "ipad",
+      "status": "coming_soon",
       "notes": "Samostatná platforma. Odkaz může být stejný jako u iPhonu, až bude vydaný.",
       "actionLabel": "App Store",
       "pendingLabel": "Připravujeme",
@@ -125,7 +125,7 @@
       "id": "android",
       "name": "Android",
       "platform": "android",
-      "status": "development",
+      "status": "coming_soon",
       "notes": "Distribuce přes Google Play. Odkaz se doplní při vydání.",
       "actionLabel": "Google Play",
       "pendingLabel": "Připravujeme",

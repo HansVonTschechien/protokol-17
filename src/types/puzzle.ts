@@ -1,7 +1,7 @@
 import type { ContentVisibility } from "./visibility";
 
 /**
- * Puzzle model shared with the macOS game.
+ * Puzzle model shared with the game client.
  * Solutions must remain visibility: "game" and must never enter public APIs.
  */
 export type PuzzleRecord = {

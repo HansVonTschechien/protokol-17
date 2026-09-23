@@ -18,6 +18,7 @@ import {
   getPublicCharacters,
   getPublicPage,
 } from "@/lib/content/repository";
+import { resolveFaqItem, type FaqItem } from "@/lib/content/faq";
 import type { HomeContent } from "@/types/home";
 
 export default async function HomePage() {
@@ -28,7 +29,7 @@ export default async function HomePage() {
     getPageContent<{
       sections: { id: string; number: string; title: string; body: string }[];
     }>("gameplay"),
-    getPublicPage<{ items: { question: string; answer: string }[] }>("faq"),
+    getPublicPage<{ items: FaqItem[] }>("faq"),
   ]);
 
   return (
@@ -222,7 +223,7 @@ export default async function HomePage() {
           <p className="kicker">FAQ</p>
           <h2 className="display-title mt-3 text-[clamp(1.8rem,5vw,3rem)]">Než otevřete spis</h2>
           <div className="mt-8 divide-y divide-line border-y border-line">
-            {faq.items.slice(0, 4).map((item) => (
+            {faq.items.slice(0, 4).map(resolveFaqItem).map((item) => (
               <details key={item.question} className="group py-4">
                 <summary className="cursor-pointer font-serif text-xl text-off-white">{item.question}</summary>
                 <p className="mt-3 max-w-2xl text-paper/85">{item.answer}</p>

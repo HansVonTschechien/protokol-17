@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
+import { platforms } from "@/config/platforms.mjs";
 import { siteConfig, SITE } from "@/config/site";
 import "./globals.css";
 
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     siteConfig.title,
     siteConfig.author,
     "detektivní hra",
-    "macOS",
+    ...platforms.map((item) => item.name),
     "puzzle",
     "krimi",
     "vyšetřování",
@@ -77,6 +78,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${plexSans.variable} ${plexSerif.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-black font-sans text-off-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoGame",
+              name: SITE.name,
+              description: SITE.description,
+              author: { "@type": "Person", name: siteConfig.author },
+              operatingSystem: platforms.map((item) => item.name),
+              inLanguage: "cs",
+            }),
+          }}
+        />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

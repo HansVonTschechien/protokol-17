@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { platformDots } from "@/config/platforms.mjs";
 import { siteConfig, SITE } from "@/config/site";
 
 export const dynamic = "force-static";
@@ -56,7 +57,7 @@ export default function OpenGraphImage() {
             color: "#cfc4ae",
           }}
         >
-          <span>{siteConfig.seoLine}</span>
+          <span>{platformDots()}</span>
           <span>SPIS 17</span>
         </div>
       </div>

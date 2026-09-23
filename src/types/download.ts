@@ -9,6 +9,8 @@ export type GamePlatform =
   | "windows"
   | "ios"
   | "ipados"
+  | "iphone"
+  | "ipad"
   | "android"
   | "linux"
   | "steam"

@@ -12,7 +12,7 @@
   },
   "statusLabels": {
     "available": "Dostupné",
-    "coming_soon": "Plánováno",
+    "coming_soon": "Připravujeme",
     "development": "Připravujeme",
     "unavailable": "Nedostupné"
   },
@@ -111,9 +111,9 @@
       ]
     },
     {
-      "id": "ios",
+      "id": "iphone",
       "name": "iPhone",
-      "platform": "ios",
+      "platform": "iphone",
       "status": "development",
       "actionLabel": "App Store",
       "pendingLabel": "Připravujeme",
@@ -124,9 +124,9 @@
       ]
     },
     {
-      "id": "ipados",
+      "id": "ipad",
       "name": "iPad",
-      "platform": "ipados",
+      "platform": "ipad",
       "status": "development",
       "actionLabel": "App Store",
       "pendingLabel": "Připravujeme",

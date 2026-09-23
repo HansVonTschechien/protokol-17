@@ -2,12 +2,12 @@
   "spoilerLevel": 0,
   "hero": {
     "titleLines": ["Některé případy", "nikdy nebyly uzavřeny."],
-    "subtitle": "Detektivní logická hra pro macOS, ve které vám nikdo neřekne, čemu věřit.",
+    "subtitle": "Detektivní logická hra pro počítače i mobilní zařízení, ve které vám nikdo neřekne, čemu věřit.",
     "primaryCta": "Vstoupit do archivu",
     "primaryHref": "/archiv",
     "secondaryCta": "Zjistit více",
     "secondaryHref": "#uvod",
-    "facts": ["macOS", "Singleplayer", "Detektivní · Puzzle · Mystery"]
+    "facts": ["Singleplayer", "Detektivní · Puzzle · Mystery"]
   },
   "film": {
     "date": "17. září 2009",
@@ -209,7 +209,7 @@
       "Najděte rozpory.",
       "Zjistěte, komu můžete věřit."
     ],
-    "primary": "Stáhnout pro macOS",
+    "primary": "Stažení",
     "primaryHref": "/stahnout",
     "secondary": "Prohlédnout případy",
     "secondaryHref": "/pripady"

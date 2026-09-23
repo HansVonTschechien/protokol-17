@@ -5,12 +5,13 @@
   "intro": "Veřejné odpovědi o hře. Bez příběhu a bez řešení.",
   "items": [
     {
-      "question": "Na jaké platformě hra funguje?",
-      "answer": "macOS."
+      "id": "platforms",
+      "question": "Na jakých platformách bude PROTOKOL 17 dostupný?",
+      "answer": ""
     },
     {
       "question": "Potřebuji myš?",
-      "answer": "Ne. Hra je navržena pro trackpad a klávesnici."
+      "answer": "Na počítači stačí trackpad nebo myš a klávesnice. Na telefonu a tabletu se hraje dotykem."
     },
     {
       "question": "Je hra v češtině?",
@@ -30,7 +31,7 @@
     },
     {
       "question": "Musím hru kupovat z App Store?",
-      "answer": "Ne nutně. Distribuce bude řešena přímo."
+      "answer": "Záleží na platformě. Počítačové verze se distribuují přímo. iPhone a iPad přes App Store, Android přes Google Play."
     },
     {
       "question": "Budu muset stahovat novou aplikaci pokaždé, když vyjde nový případ?",

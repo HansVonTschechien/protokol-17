@@ -1,6 +1,6 @@
 # PROTOKOL 17
 
-Oficiální web a veřejný obsahový systém české detektivní hry pro macOS.
+Oficiální web a veřejný obsahový systém detektivní hry pro macOS, Windows, iPhone, iPad a Android.
 
 ## Lokálně
 
@@ -30,5 +30,5 @@ GitHub Pages nespouští Node server, proto jsou endpointy statické JSON soubor
 - `/api/cases/:id/version.json`
 - `/api/content/:id.json`
 
-Verze hry a požadavky na macOS se berou z `src/content/public/release.json`.
+Podporované platformy jsou v `src/config/platforms.mjs`. Požadavky konkrétní verze, včetně macOS, jsou u dané platformy ve stažení.
 Herní tajemství do veřejného API nepatří.
